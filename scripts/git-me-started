@@ -1,0 +1,28 @@
+#!/bin/bash
+
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt install -y git-lfs
+git lfs install
+git init
+git config credential.helper cache
+git lfs track "*.csv"
+git lfs track "*.gz"
+
+cat << EOF > .gitignore
+# Dotfiles
+.cache
+.gitconfig
+.ipynb_checkpoints
+.jupyter
+.ssh
+.git
+.ipython
+.local
+.voc
+EOF
+
+git remote add origin https://github.com/gperdrizet/fullstack.git
+git add .
+git commit -m "First commit with LFS!"
+git branch -M main
+git push origin main
