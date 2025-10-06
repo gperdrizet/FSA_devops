@@ -1,13 +1,37 @@
 #!/bin/bash
 
+# Check if repository URL was provided as argument
+if [ $# -eq 0 ]; then
+    echo "Error: No repository URL provided"
+    echo "Usage: $0 <repository-url>"
+    echo "Example: $0 https://github.com/username/repo.git"
+    exit 1
+fi
+
+REPO_URL="$1"
+
+# Download and run the Git LFS installation script
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+
+# Install Git LFS package
 sudo apt install -y git-lfs
+
+# Set up Git LFS in the user's Git configuration
 git lfs install
+
+# Initialize a new Git repository in the current directory
 git init
+
+# Configure Git to cache credentials in memory (default 15 minutes)
 git config credential.helper cache
+
+# Configure Git LFS to track CSV files
 git lfs track "*.csv"
+
+# Configure Git LFS to track gzipped files
 git lfs track "*.gz"
 
+# Create a .gitignore file with common files/directories to exclude
 cat << EOF > .gitignore
 # Dotfiles
 .cache
@@ -21,8 +45,17 @@ cat << EOF > .gitignore
 .voc
 EOF
 
-git remote add origin https://github.com/gperdrizet/fullstack.git
+# Add the remote repository URL
+git remote add origin "$REPO_URL"
+
+# Stage all files in the current directory
 git add .
+
+# Create the first commit with a descriptive message
 git commit -m "First commit with LFS!"
+
+# Rename the current branch to 'main'
 git branch -M main
+
+# Push the committed changes to the remote repository
 git push origin main
