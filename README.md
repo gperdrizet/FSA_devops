@@ -8,9 +8,9 @@ Tips, tricks and tools for working with Fullstack Academy AI/ML boot camp course
 
 This repository will be the home for your Vocareum code on GitHub. From your GihHub profile page:
 
-1. Go to repositories -> 'New'
+1. Go to repositories and click the green 'New' button
 2. Set yourself as the repo owner
-3. Give the new repo a descriptive name and description
+3. Give the new repo a descriptive name
 4. Set the visibility to private
 5. Don't add a template, README, .gitignore or license
 6. Click 'create repository'
@@ -34,7 +34,7 @@ Next, create access credentials to authenticate on GitHub from within Vocareum. 
 11. Click the green 'Generate token' button and then again to confirm
 12. Copy and save the token string somewhere safe
 
-You will need to enter this token once per Vocareum session to authenticate to GitHub. I recommend saving it in a textfile somewhere on your local machine (probably in the same place as the target repo URL from step 1.1.). If you forget or leak it, it's not a big deal. You can easily expire and generate a new token. Fine-grained personal access tokens are easy to change/update and only grant specific access to the repo(s) we choose. Much better than using your GitHub password.
+You will need to enter this token once per Vocareum session to authenticate to GitHub. I recommend saving it in a text file somewhere on your local machine (probably in the same place as the target repo URL from step 1.1.). If you forget or leak it, it's not a big deal. You can easily expire and generate a new token. Fine-grained personal access tokens are easy to change/update and only grant specific access to the repo(s) we choose. Much better than using your GitHub password.
 
 ### 1.3. First commit and push
 
@@ -47,13 +47,13 @@ Now we need to commit and push the contents of your Vocareum environment to the 
 wget https://raw.githubusercontent.com/gperdrizet/FSA_devops/refs/heads/main/scripts/git-me-started
 ```
 
-3. Change the script's permissions to allow user execution
+3. Change the script's permissions to allow user execution:
 
 ```text
 sudo chmod u+x ./git-me-started
 ```
 
-4. Run the script, passing your blank GitHub repository as an argument:
+4. Run the script, passing your blank GitHub repository's URL as an argument:
 
 ```text
 ./git-me-started YOUR_REPO_URL
