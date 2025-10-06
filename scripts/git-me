@@ -31,8 +31,5 @@ git config credential.helper cache
 # Add the remote repository URL
 git remote add origin "$REPO_URL"
 
-# Set the upstream for the main branch
-git push --set-upstream origin main
-
 # Pull the latest changes from the main branch
 git pull origin main
