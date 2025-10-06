@@ -41,7 +41,7 @@ You will need to enter this token once per Vocareum session to authenticate to G
 Now we need to commit and push the contents of your Vocareum environment to the empty repository we created in step 1.1. From the Jupyter lab interface of your Vocareum workbench:
 
 1. Open a terminal (File -> New -> Terminal)
-2. Download the [git-me-started](https://github.com/gperdrizet/FSA_devops/blob/main/scripts/git-me-started) shell script from this repository:
+2. Download the [`git-me-started`](https://github.com/gperdrizet/FSA_devops/blob/main/scripts/git-me-started) shell script from this repository:
 
 ```text
 wget https://raw.githubusercontent.com/gperdrizet/FSA_devops/refs/heads/main/scripts/git-me-started
@@ -73,7 +73,7 @@ git push origin main
 
 ### 1.4. Authenticating subsequent Vocareum sessions
 
-The next time you fire up a Vocareum session, you only need to authenticate and sync with your remote repository on Github using the `git-me` script from this repository:
+The next time you fire up a Vocareum session, you only need to authenticate and sync with your remote repository on Github using the [`git-me`](https://github.com/gperdrizet/FSA_devops/blob/main/scripts/git-me) script from this repository:
 
 ```text
 wget https://raw.githubusercontent.com/gperdrizet/FSA_devops/refs/heads/main/scripts/git-me
