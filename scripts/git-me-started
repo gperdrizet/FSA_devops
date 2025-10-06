@@ -63,5 +63,8 @@ git commit -m "First commit with LFS!"
 # Rename the current branch to 'main'
 git branch -M main
 
+# Set the upstream for the main branch
+git push --set-upstream origin main
+
 # Push the committed changes to the remote repository
 git push origin main
