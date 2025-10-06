@@ -10,10 +10,6 @@ fi
 
 REPO_URL="$1"
 
-# Download the GitHub set-up script so we have it for next time
-curl -o git-me https://raw.githubusercontent.com/gperdrizet/FSA_devops/refs/heads/main/scripts/git-me
-sudo chmod u+x git-me
-
 # Download and run the Git LFS installation script
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 
@@ -48,6 +44,7 @@ cat << EOF > .gitignore
 .ssh
 .voc
 .wget-hsts
+git-me
 git-me-started
 EOF
 
@@ -63,8 +60,5 @@ git commit -m "First commit with LFS!"
 # Rename the current branch to 'main'
 git branch -M main
 
-# Set the upstream for the main branch
+# Push the committed changes to the remote repository, setting upstream
 git push --set-upstream origin main
-
-# Push the committed changes to the remote repository
-git push origin main
