@@ -10,6 +10,10 @@ fi
 
 REPO_URL="$1"
 
+# Download the GitHub set-up script so we have it for next time
+curl -o git-me https://raw.githubusercontent.com/gperdrizet/FSA_devops/refs/heads/main/scripts/git-me
+sudo chmod u+x git-me
+
 # Download and run the Git LFS installation script
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 
@@ -35,14 +39,16 @@ git lfs track "*.gz"
 cat << EOF > .gitignore
 # Dotfiles
 .cache
+.git
 .gitconfig
 .ipynb_checkpoints
-.jupyter
-.ssh
-.git
 .ipython
+.jupyter
 .local
+.ssh
 .voc
+.wget-hsts
+git-me-started
 EOF
 
 # Add the remote repository URL
