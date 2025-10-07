@@ -1,0 +1,45 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/images/blob/main/src/jekyll/README.md
+{
+	// Container definition for a Jekyll development environment
+	"name": "Jekyll",
+	"image": "mcr.microsoft.com/devcontainers/jekyll:2.0",
+
+	// Custom configuration options
+	"customizations": {
+	  "vscode": {
+
+		// Use 'settings' to set default VS code values on container create
+		"settings": {
+			// "remote.autoForwardPorts": false,
+			"remote.restoreForwardedPorts": false
+		},
+
+		// Add the IDs of VS code extensions you want to install here
+		"extensions": [
+            "github.copilot",
+            "github.copilot-chat",
+            "streetsidesoftware.code-spell-checker"
+		],
+
+		// MCP servers
+		"mcp": {
+			"servers": {
+				"github": {
+					"type": "http",
+					"url": "https://api.githubcopilot.com/mcp/"
+				}
+			}
+		}
+	  }
+	},
+
+	// Use 'onCreateCommand' to run commands once when the container is created
+	"onCreateCommand": "sudo apt update && sudo apt upgrade -y && sudo apt install -y nodejs npm",
+
+	// Use 'postCreateCommand' to run commands once after the container is created
+	"postCreateCommand": "",
+
+	// Use 'postAttachCommand' to run commands each time a user connects to the container
+	"postAttachCommand": "bundle exec jekyll serve"
+}
