@@ -11,7 +11,7 @@
 
 		// Use 'settings' to set default VS code values on container create
 		"settings": {
-			// "remote.autoForwardPorts": false,
+			"remote.autoForwardPorts": true,
 			"remote.restoreForwardedPorts": false
 		},
 
@@ -20,26 +20,16 @@
             "github.copilot",
             "github.copilot-chat",
             "streetsidesoftware.code-spell-checker"
-		],
-
-		// MCP servers
-		"mcp": {
-			"servers": {
-				"github": {
-					"type": "http",
-					"url": "https://api.githubcopilot.com/mcp/"
-				}
-			}
-		}
+		]
 	  }
 	},
 
 	// Use 'onCreateCommand' to run commands once when the container is created
-	"onCreateCommand": "sudo apt update && sudo apt upgrade -y && sudo apt install -y nodejs npm",
+	"onCreateCommand": "sudo apt update && sudo apt upgrade -y",
 
 	// Use 'postCreateCommand' to run commands once after the container is created
 	"postCreateCommand": "",
 
 	// Use 'postAttachCommand' to run commands each time a user connects to the container
-	"postAttachCommand": "bundle exec jekyll serve"
+	//"postAttachCommand": "bundle exec jekyll serve"
 }
