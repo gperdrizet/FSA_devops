@@ -1,4 +1,4 @@
-# Fullstack Adacemy DevOps
+# Fullstack Academy DevOps
 
 Tips, tricks and tools for working with Fullstack Academy AI/ML boot camp course content.
 
@@ -6,7 +6,7 @@ Tips, tricks and tools for working with Fullstack Academy AI/ML boot camp course
 
 ### 1.1. Vocareum
 
-1. [Tracking Vocareum environments on GitHub]
+1. [Tracking Vocareum environments on GitHub](https://github.com/gperdrizet/FSA_devops/blob/main/pages/vocareum/github.md)
 
 ### 1.2. GitHub Codespaces
 
