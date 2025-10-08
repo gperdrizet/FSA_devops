@@ -10,7 +10,7 @@ Tips, tricks and tools for working with Fullstack Academy AI/ML boot camp course
 
 ### 1.1. Vocareum
 
-1. <a href='gperdrizet.github.io/FSA_devops/devops_pages/vocareum'>Tracking Vocareum environments on GitHub</a>
+1. [Tracking Vocareum environments on GitHub](https://gperdrizet.github.io/FSA_devops/devops_pages/vocareum.html)
 
 ### 1.2. GitHub Codespaces
 
