@@ -2,7 +2,6 @@
 layout: page
 title: "DevOps Guides Overview"
 permalink: /devops_pages/overview.html
-nav_exclude: true
 ---
 
 Tips, tricks and tools for working with Fullstack Academy AI/ML boot camp course content.
