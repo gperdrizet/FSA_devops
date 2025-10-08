@@ -2,6 +2,7 @@
 layout: page
 title: Tracking Vocareum environments on GitHub
 permalink: /devops_pages/vocareum.html
+nav_exclude: true
 ---
 
 ### 1.1. Initialize an empty GitHub repository
