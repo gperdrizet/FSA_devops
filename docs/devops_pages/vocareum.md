@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tracking Vocareum environments on GitHub
-permalink: /devops/vocareum/
+permalink: /devops_pages/vocareum.html
 ---
 
 ### 1.1. Initialize an empty GitHub repository
