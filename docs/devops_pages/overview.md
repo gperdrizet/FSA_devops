@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "DevOps"
-permalink: /devops/
+title: "DevOps Guides Overview"
+permalink: /devops_pages/overview.html
 ---
 
 Tips, tricks and tools for working with Fullstack Academy AI/ML boot camp course content.
@@ -10,7 +10,7 @@ Tips, tricks and tools for working with Fullstack Academy AI/ML boot camp course
 
 ### 1.1. Vocareum
 
-1. [Tracking Vocareum environments on GitHub](https://github.com/gperdrizet/FSA_devops/blob/main/pages/vocareum/github.md)
+1. <a href='gperdrizet.github.io/FSA_devops/devops_pages/vocareum'>Tracking Vocareum environments on GitHub</a>
 
 ### 1.2. GitHub Codespaces
 
