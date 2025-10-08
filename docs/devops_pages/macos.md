@@ -2,6 +2,7 @@
 layout: page
 title: Setting up Git, Python, and VS Code on macOS
 permalink: /devops_pages/macos.html
+nav_exclude: true
 ---
 
 ## Setting up your macOS development environment
