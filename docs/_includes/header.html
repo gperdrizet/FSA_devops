@@ -7,16 +7,14 @@
     <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
 
     {%- unless page_titles == empty %}
-      {%- unless page.nav_exclude %}
-        <nav class="site-nav">
-            <input type="checkbox" id="nav-trigger" />
-            <label for="nav-trigger">
-            <span class="menu-icon"></span>
-            </label>
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon"></span>
+        </label>
 
-            {% include nav-items.html paths = page_paths %}
-        </nav>
-      {%- endunless %}
+        {% include nav-items.html paths = page_paths %}
+      </nav>
     {%- endunless %}
   </div>
 </header>
