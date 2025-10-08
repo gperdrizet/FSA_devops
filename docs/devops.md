@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "DevOps"
-permalink: /pages/
+permalink: /devops/
 ---
 
 Tips, tricks and tools for working with Fullstack Academy AI/ML boot camp course content.
