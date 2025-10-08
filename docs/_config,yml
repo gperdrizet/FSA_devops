@@ -4,8 +4,7 @@ author:
   email: george.perdrizet@fullstackacademy.com
 
 description: >
-  GiHub pages blog for updates, additional resources and how-to guides
-  related to the Fullstack Academy AI/ML program.
+  GiHub pages blog for updates, additional resources and how-to guides related to the Fullstack Academy AI/ML program.
 
 remote_theme: "jekyll/minima@1e8a445"
 
@@ -34,6 +33,7 @@ minima:
   #   should be rendered.
   nav_pages:
     - about.md
+    - devops.md
 
   # Set to `true` to show excerpts on the homepage.
   show_excerpts: true
