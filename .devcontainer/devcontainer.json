@@ -25,7 +25,7 @@
 	},
 
 	// Use 'onCreateCommand' to run commands once when the container is created
-	"onCreateCommand": "sudo apt update && sudo apt upgrade -y",
+	"onCreateCommand": "sudo apt update && sudo apt upgrade -y && bundle install",
 
 	// Use 'postCreateCommand' to run commands once after the container is created
 	"postCreateCommand": ""
