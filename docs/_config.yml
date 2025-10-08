@@ -6,7 +6,7 @@ author:
 description: >
   GiHub pages blog for updates, additional resources and how-to guides related to the Fullstack Academy AI/ML program.
 
-theme: minima
+remote_theme: "jekyll/minima@cdc7033"
 
 plugins:
   - jekyll-feed
