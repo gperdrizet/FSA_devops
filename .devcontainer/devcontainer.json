@@ -29,8 +29,8 @@
 	"onCreateCommand": "sudo apt update && sudo apt upgrade -y",
 
 	// Use 'postCreateCommand' to run commands once after the container is created
-	"postCreateCommand": "bundle install",
+	//"postCreateCommand": "bundle install",
 
 	// Use 'postAttachCommand' to run commands each time a user connects to the container
-	"postAttachCommand": "bundle exec jekyll serve"
+	//"postAttachCommand": "bundle exec jekyll serve"
 }
