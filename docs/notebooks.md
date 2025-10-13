@@ -4,9 +4,7 @@ title: Jupyter notebooks
 permalink: /notebooks/
 ---
 
-## Jupyter Notebooks
-
-### Unit 1: Programming refresher
+## Unit 1: Programming refresher
 
 | Lesson                 | Topic                     | Notebooks                                                                                                         |
 |------------------------|---------------------------|-------------------------------------------------------------------------------------------------------------------|
