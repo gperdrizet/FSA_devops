@@ -2,7 +2,8 @@
 layout: page
 title: Setting up Git, Python, and VS Code on Windows
 permalink: /devops_pages/windows.html
-nav_exclude: true
+nav_exclude: truerotten
+
 ---
 
 ## Setting up your Windows development environment
