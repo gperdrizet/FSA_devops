@@ -1,9 +1,9 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/images/blob/main/src/jekyll/README.md
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	// Container definition for a Jekyll development environment
-	"name": "Jekyll",
-	"image": "mcr.microsoft.com/devcontainers/jekyll:2.0",
+	// Container definition for a Python 3.11 development environment
+	"name": "Python 3.12",
+	"image": "mcr.microsoft.com/devcontainers/python:3.12",
 
 	// Custom configuration options
 	"customizations": {
@@ -11,26 +11,36 @@
 
 		// Use 'settings' to set default VS code values on container create
 		"settings": {
-			"remote.autoForwardPorts": true,
+			"python.defaultInterpreterPath": "/usr/local/bin/python",
+			"jupyter.kernels.excludePythonEnvironments": [
+				"/bin/python3",
+				"/bin/python3.13",
+				"/usr/bin/python3",
+				"/usr/bin/python3.13",
+				"/usr/local/bin/python3"
+			],
+			"remote.autoForwardPorts": false,
 			"remote.restoreForwardedPorts": false
 		},
 
 		// Add the IDs of VS code extensions you want to install here
 		"extensions": [
-            "github.copilot",
-            "github.copilot-chat",
-            "streetsidesoftware.code-spell-checker",
-			"github.vscode-github-actions"
+		  "-dbaeumer.vscode-eslint",
+		  "ms-python.python",
+		  "ms-toolsai.jupyter",
+		  "streetsidesoftware.code-spell-checker",
+		  "github.copilot",
+		  "github.copilot-chat"
 		]
 	  }
 	},
 
 	// Use 'onCreateCommand' to run commands once when the container is created
-	"onCreateCommand": "sudo apt update && sudo apt upgrade -y",
+	"onCreateCommand": "sudo apt update && sudo apt upgrade -y && pip3 install --upgrade pip && pip3 install --user -r requirements.txt"
 
 	// Use 'postCreateCommand' to run commands once after the container is created
-	"postCreateCommand": "bundle install",
+	//"postCreateCommand": "",
 
 	// Use 'postAttachCommand' to run commands each time a user connects to the container
-	"postAttachCommand": "bundle exec jekyll serve"
+	//"postAttachCommand": ""
 }
