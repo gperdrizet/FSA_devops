@@ -78,5 +78,20 @@ permalink: /notebooks/
             </a>
         </td>
     </tr>
+    <tr>
+        <td>05: Loops & conditionals</td>
+        <td>If statements, for & while loops, range() function</td>
+        <td>In-class activity</td>
+        <td style="text-align: center;">
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit1/Lesson_05_activity.ipynb">
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
+            </a>
+        </td>
+        <td style="text-align: center;">
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit1/Lesson_05_activity.ipynb" download>
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
+            </a>
+        </td>
+    </tr>
     </tbody>
 </table>
