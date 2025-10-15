@@ -38,7 +38,7 @@ permalink: /notebooks/
         <td rowspan="3">Data types, operators, files & error handling</td>
         <td>In-class demo</td>
         <td style="text-align: center;">
-            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit1/Lesson_04_demo.ipynb">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit1/Lesson_04_demo.ipynb">
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
             </a>
         </td>
@@ -53,7 +53,7 @@ permalink: /notebooks/
         <!--<td>Data types, operators, files & error handling</td>-->
         <td>In-class activity</td>
         <td style="text-align: center;">
-            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit1/Lesson_04_activity.ipynb">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit1/Lesson_04_activity.ipynb">
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
             </a>
         </td>
@@ -68,7 +68,7 @@ permalink: /notebooks/
         <!--<td>Data types, operators, files & error handling</td>-->
         <td>In-class activity solution</td>
         <td style="text-align: center;">
-            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit1/Lesson_04_activity_solution.ipynb">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit1/Lesson_04_activity_solution.ipynb">
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
             </a>
         </td>
@@ -83,7 +83,7 @@ permalink: /notebooks/
         <td>If statements, for & while loops, range() function</td>
         <td>In-class activity</td>
         <td style="text-align: center;">
-            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit1/Lesson_05_activity.ipynb">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit1/Lesson_05_activity.ipynb">
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
             </a>
         </td>
