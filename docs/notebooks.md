@@ -124,12 +124,12 @@ permalink: /notebooks/
         <td>Defining & calling functions, arguments, generators</td>
         <td>In-class activity</td>
         <td style="text-align: center;">
-            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit1/Lesson_06_demo.ipynb">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit1/Lesson_06_activity.ipynb">
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
             </a>
         </td>
         <td style="text-align: center;">
-            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit1/Lesson_06_demo.ipynb" download>
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit1/Lesson_06_activity.ipynb" download>
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
             </a>
         </td>
