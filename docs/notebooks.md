@@ -162,3 +162,35 @@ permalink: /notebooks/
     </tr>
     </tbody>
 </table>
+
+---
+## Unit 2: Applied data science with Python
+
+<table>
+    <thead>
+    <tr>
+        <th>Lesson</th>
+        <th>Topics</th>
+        <th>Notebook</th>
+        <th>GitHub</th>
+        <th>Download</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>09: NumPy</td>
+        <td>Arrays & array operations, indexing, slicing</td>
+        <td>In-class activity</td>
+        <td style="text-align: center;">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Lesson_09_activity.ipynb">
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
+            </a>
+        </td>
+        <td style="text-align: center;">
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/Lesson_09_activity.ipynb" download>
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
