@@ -15,3 +15,11 @@ permalink: /resources/
 2. <a href="https://gperdrizet.github.io/FSA_devops/assets/cheatsheets/vscode_cheatsheet_windows.pdf" download>VScode (Windows)</a>
 3. <a href="https://gperdrizet.github.io/FSA_devops/assets/cheatsheets/vscode_cheatsheet_macos.pdf" download>VScode (MacOs)</a>
 4. <a href="https://gperdrizet.github.io/FSA_devops/assets/cheatsheets/git_cheatsheet.pdf" download>Git</a>
+
+---
+## Data science library information
+
+1. NumPy
+    - [Official documentation](https://numpy.org/doc/stable/index.html)
+    - [GitHub repository](https://github.com/numpy/numpy)
+    - [PyPI package page](https://pypi.org/project/numpy)
