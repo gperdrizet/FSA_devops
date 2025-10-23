@@ -51,7 +51,7 @@ permalink: /notebooks/
     <tr>
         <!--<td>04: Python Data Types & Operators</td>-->
         <!--<td>Data types, operators, files & error handling</td>-->
-        <td>In-class activity</td>
+        <td>Activity</td>
         <td style="text-align: center;">
             <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit1/Lesson_04_activity.ipynb">
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
@@ -66,7 +66,7 @@ permalink: /notebooks/
     <tr>
         <!--<td>04: Python Data Types & Operators</td>-->
         <!--<td>Data types, operators, files & error handling</td>-->
-        <td>In-class activity solution</td>
+        <td>Activity solution</td>
         <td style="text-align: center;">
             <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit1/Lesson_04_activity_solution.ipynb">
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
@@ -94,7 +94,7 @@ permalink: /notebooks/
         </td>
     </tr>
     <tr>
-        <td>In-class activity</td>
+        <td>Activity</td>
         <td style="text-align: center;">
             <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit1/Lesson_05_activity.ipynb">
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
@@ -107,7 +107,7 @@ permalink: /notebooks/
         </td>
     </tr>
     <tr>
-        <td>In-class activity solution</td>
+        <td>Activity solution</td>
         <td style="text-align: center;">
             <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit1/Lesson_05_activity_solution.ipynb">
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
@@ -135,7 +135,7 @@ permalink: /notebooks/
         </td>
     </tr>
     <tr>
-        <td>In-class activity</td>
+        <td>Activity</td>
         <td style="text-align: center;">
             <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit1/Lesson_06_activity.ipynb">
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
@@ -148,7 +148,7 @@ permalink: /notebooks/
         </td>
     </tr>
     <tr>
-        <td>In-class activity solution</td>
+        <td>Activity solution</td>
         <td style="text-align: center;">
             <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit1/Lesson_06_activity_solution.ipynb">
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
@@ -178,9 +178,22 @@ permalink: /notebooks/
     </thead>
     <tbody>
     <tr>
-        <td>09: NumPy</td>
-        <td>Arrays & array operations, indexing, slicing</td>
-        <td>In-class activity</td>
+        <td rowspan="2">09: NumPy</td>
+        <td rowspan="2">Arrays & array operations, indexing, slicing</td>
+        <td>In-class demo</td>
+        <td style="text-align: center;">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Lesson_09_demo.ipynb">
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
+            </a>
+        </td>
+        <td style="text-align: center;">
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/Lesson_09_demo.ipynb" download>
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>Activity</td>
         <td style="text-align: center;">
             <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Lesson_09_activity.ipynb">
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
