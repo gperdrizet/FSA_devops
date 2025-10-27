@@ -178,8 +178,8 @@ permalink: /notebooks/
     </thead>
     <tbody>
     <tr>
-        <td rowspan="4">09: NumPy</td>
-        <td rowspan="4">Arrays & array operations, indexing, slicing</td>
+        <td rowspan="5">09: NumPy</td>
+        <td rowspan="5">Arrays & array operations, indexing, slicing</td>
         <td>In-class demo</td>
         <td style="text-align: center;">
             <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Lesson_09_demo.ipynb">
@@ -206,6 +206,19 @@ permalink: /notebooks/
         </td>
     </tr>
     <tr>
+        <td>Activity solution</td>
+        <td style="text-align: center;">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Lesson_09_activity_solution.ipynb">
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
+            </a>
+        </td>
+        <td style="text-align: center;">
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/Lesson_09_activity_solution.ipynb" download>
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
+            </a>
+        </td>
+    </tr>
+    <tr>
         <td>Extra NumPy practice</td>
         <td style="text-align: center;">
             <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/NumPy_Practice_Problems.ipynb">
@@ -227,6 +240,21 @@ permalink: /notebooks/
         </td>
         <td style="text-align: center;">
             <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/Numpy_Indexing_&_Slicing_Practice.ipynb" download>
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>10: Pandas</td>
+        <td>DataFrames, series, data manipulation</td>
+        <td>Activity</td>
+        <td style="text-align: center;">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Lesson_10_activity.ipynb">
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
+            </a>
+        </td>
+        <td style="text-align: center;">
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/Lesson_10_activity.ipynb" download>
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
             </a>
         </td>
