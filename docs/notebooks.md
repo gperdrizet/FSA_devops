@@ -178,8 +178,8 @@ permalink: /notebooks/
     </thead>
     <tbody>
     <tr>
-        <td rowspan="5">09: NumPy</td>
-        <td rowspan="5">Arrays & array operations, indexing, slicing</td>
+        <td rowspan="7">09: NumPy</td>
+        <td rowspan="7">Arrays & array operations, indexing, slicing</td>
         <td>In-class demo</td>
         <td style="text-align: center;">
             <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Lesson_09_demo.ipynb">
@@ -231,6 +231,19 @@ permalink: /notebooks/
             </a>
         </td>
     </tr>
+        <tr>
+        <td>Extra NumPy practice (Solutions)</td>
+        <td style="text-align: center;">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Numpy_Indexing_&_Slicing_Practice (Solutions).ipynb">
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
+            </a>
+        </td>
+        <td style="text-align: center;">
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/Numpy_Indexing_&_Slicing_Practice (Solutions).ipynb" download>
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
+            </a>
+        </td>
+    </tr>
     <tr>
         <td>Extra NumPy slicing & indexing practice</td>
         <td style="text-align: center;">
@@ -240,6 +253,19 @@ permalink: /notebooks/
         </td>
         <td style="text-align: center;">
             <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/Numpy_Indexing_&_Slicing_Practice.ipynb" download>
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
+            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>Extra NumPy slicing & indexing practice (Solutions)</td>
+        <td style="text-align: center;">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Numpy_Indexing_&_Slicing_Practice (Solutions).ipynb">
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
+            </a>
+        </td>
+        <td style="text-align: center;">
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/Numpy_Indexing_&_Slicing_Practice (Solutions).ipynb" download>
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
             </a>
         </td>
