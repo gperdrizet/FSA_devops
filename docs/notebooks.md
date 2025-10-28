@@ -306,8 +306,8 @@ permalink: /notebooks/
             </a>
         </td>
         <td style="text-align: center;">
-            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/sales.csv" download>
-                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/students.svg" width="15" height="15">
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/students.csv" download>
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
             </a>
         </td>
     </tr>
