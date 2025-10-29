@@ -271,8 +271,8 @@ permalink: /notebooks/
         </td>
     </tr>
     <tr>
-        <td rowspan="4">10: Pandas</td>
-        <td rowspan="4">DataFrames, series, data manipulation</td>
+        <td rowspan="8">10: Pandas</td>
+        <td rowspan="8">DataFrames, series, data manipulation</td>
         <td>In-class demo</td>
         <td style="text-align: center;">
             <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Lesson_10_demo.ipynb">
@@ -299,30 +299,82 @@ permalink: /notebooks/
         </td>
     </tr>
     <tr>
-        <td>sales.csv</td>
+        <td>Strings & Sorting practice</td>
         <td style="text-align: center;">
-            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/sales.csv">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Lesson_10%20Pandas_Strings_and_Sorting_Problems.ipynb">
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
             </a>
         </td>
         <td style="text-align: center;">
-            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/sales.csv" download>
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/Lesson_10%20Pandas_Strings_and_Sorting_Problems.ipynb" download>
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
             </a>
         </td>
     </tr>
     <tr>
-        <td>students.csv</td>
+        <td>Series practice</td>
         <td style="text-align: center;">
-            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/students.csv">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Lesson_10%20Pandas_Series_Practice_Problems.ipynb">
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
             </a>
         </td>
         <td style="text-align: center;">
-            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/students.csv" download>
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/Lesson_10%20Pandas_Series_Practice_Problems.ipynb" download>
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
             </a>
         </td>
     </tr>
+    <tr>
+        <td>Datetime practice</td>
+        <td style="text-align: center;">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Lesson_10%20Pandas_Datetime_Practice.ipynb">
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
+            </a>
+        </td>
+        <td style="text-align: center;">
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/Lesson_10%20Pandas_Datetime_Practice.ipynb" download>
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>DataFrame practice</td>
+        <td style="text-align: center;">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Lesson_10%20Pandas_Dataframe_Practice_Problems.ipynb">
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
+            </a>
+        </td>
+        <td style="text-align: center;">
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/Lesson_10%20Pandas_Dataframe_Practice_Problems.ipynb" download>
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
+            </a>
+        </td>
+    </tr>
+     <tr>
+         <td>sales.csv</td>
+         <td style="text-align: center;">
+             <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/sales.csv">
+                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
+             </a>
+         </td>
+         <td style="text-align: center;">
+             <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/sales.csv" download>
+                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
+             </a>
+         </td>
+     </tr>
+     <tr>
+         <td>students.csv</td>
+         <td style="text-align: center;">
+             <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/students.csv">
+                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
+             </a>
+         </td>
+         <td style="text-align: center;">
+             <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/students.csv" download>
+                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
+             </a>
+         </td>
+     </tr>
     </tbody>
 </table>
