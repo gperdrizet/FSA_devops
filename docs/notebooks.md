@@ -271,8 +271,8 @@ permalink: /notebooks/
         </td>
     </tr>
     <tr>
-        <td rowspan="4">10: Pandas</td>
-        <td rowspan="4">DataFrames, series, data manipulation</td>
+        <td rowspan="5">10: Pandas</td>
+        <td rowspan="5">DataFrames, series, data manipulation</td>
         <td>In-class demo</td>
         <td style="text-align: center;">
             <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Lesson_10_demo.ipynb">
@@ -294,6 +294,19 @@ permalink: /notebooks/
         </td>
         <td style="text-align: center;">
             <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/Lesson_10_activity.ipynb" download>
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>Activity solution</td>
+        <td style="text-align: center;">
+            <a href="https://github.com/gperdrizet/FSA_devops/blob/main/docs/assets/notebooks/unit2/Lesson_10_activity_solution.ipynb">
+                <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
+            </a>
+        </td>
+        <td style="text-align: center;">
+            <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit2/Lesson_10_activity_solution.ipynb" download>
                 <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
             </a>
         </td>
