@@ -36,6 +36,7 @@ permalink: /resources/
 
 1. <a href="https://gperdrizet.github.io/FSA_devops/assets/slides/Capstone_Session_1.pdf" download>Incremental capstone session 1</a>
 
+---
 ## Datasets
 
 1. <a href="https://gperdrizet.github.io/FSA_devops/assets/data/NSMES1988-NSMES1988.csv" download>Incremental capstone dataset 1</a>
