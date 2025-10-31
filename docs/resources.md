@@ -42,7 +42,7 @@ permalink: /resources/
     - For an interesting alternative to Pandas see [Polars](https://pola.rs)
     - For N dimensional, labeled arrays see [Xarray](https://xarray.dev)
     - For parallel, distributed dataframes see [PySpark](https://spark.apache.org/docs/latest/api/python/index.html) and [Dask](https://docs.dask.org/en/stable)
-    - For GPU accelerated data analysis see: [CuPy](https://docs.cupy.dev/en/stable) and [NVIDIA RAPIDS](https://rapids.ai)
+    - For GPU accelerated data analysis see: [CuPy](https://docs.cupy.dev/en/stable) and [RAPIDS](https://rapids.ai)
     - For data pipeline workflow management see: [Luigi](https://github.com/spotify/luigi) or [Airflow](https://github.com/apache/airflow)
 
 2. Data visualization
