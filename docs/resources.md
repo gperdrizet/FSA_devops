@@ -30,6 +30,25 @@ permalink: /resources/
     - [GitHub repository](https://github.com/pandas-dev/pandas)
     - [PyPI package page](https://pypi.org/project/pandas)
 
+3. Matplotlib
+    - [Official documentation](https://matplotlib.org/stable/index.html)
+    - [GitHub repository](https://github.com/matplotlib/matplotlib)
+    - [PyPI package page](https://pypi.org/project/matplotlib)
+
+---
+## Other interesting links
+
+1. Further topics in data wrangling/data analysis
+    - For an interesting alternative to Pandas see [Polars](https://pola.rs)
+    - For N dimensional, labeled arrays see [Xarray](https://xarray.dev)
+    - For parallel, distributed dataframes see [PySpark](https://spark.apache.org/docs/latest/api/python/index.html) and [Dask](https://docs.dask.org/en/stable)
+    - For GPU accelerated data analysis see: [CuPy](https://docs.cupy.dev/en/stable) and [NVIDIA RAPIDS](https://rapids.ai)
+    - For data pipeline workflow management see: [Luigi](https://github.com/spotify/luigi) or [Airflow](https://github.com/apache/airflow)
+
+2. Data visualization
+    - [The Python graph gallery](https://github.com/holtzy/The-Python-Graph-Gallery/tree/master)
+    - [Data to vis](https://www.data-to-viz.com)
+
 ---
 ## Slides
 
