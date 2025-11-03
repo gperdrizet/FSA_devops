@@ -5,7 +5,6 @@ permalink: /notebooks/
 ---
 
 {% for unit in site.data.notebooks.units %}
----
 ## {{ unit.name }}
 
 <table>
@@ -49,4 +48,5 @@ permalink: /notebooks/
     </tbody>
 </table>
 
+---
 {% endfor %}

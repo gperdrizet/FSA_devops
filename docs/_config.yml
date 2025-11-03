@@ -1,4 +1,25 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
 title: Fullstack Academy AI/ML
+
 author:
   name: George Perdrizet
   email: george.perdrizet@fullstackacademy.com
@@ -6,8 +27,12 @@ author:
 description: >
   GiHub pages blog for updates, additional resources and how-to guides related to the Fullstack Academy AI/ML program.
 
-remote_theme: "jekyll/minima@1e8a445"
+theme: minima
 
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+# github_username:  gperdrizet
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -16,43 +41,43 @@ sass:
   quiet_deps: true
   silence_deprecations: [import]
 
+# Build settings
 minima:
-  # Minima skin selection. Available skins are:
-  #   Available skins:
-  #     * classic            Default, light color scheme.
-  #     * dark               Dark variant of the classic skin.
-  #     * auto               Adaptive skin based on the default classic and dark skins.
-  #     * solarized-light    Light variant of solarized color scheme.
-  #     * solarized-dark     Dark variant of solarized color scheme.
-  #     * solarized          Adaptive skin for solarized color scheme skins.
   skin: classic
 
-  # Specific pages for site navigation.
-  #   If you wish to link only specific pages in the site-navigation, use this and list
-  #   the `path` property (as represented via Liquid) of the pages in the order they
-  #   should be rendered.
-  nav_pages:
-    - about.md
-    - devops.md
+# Set to `true` to show excerpts on the homepage.
+show_excerpts: true
 
-  # Set to `true` to show excerpts on the homepage.
-  show_excerpts: true
+# Social Media Links
+#   Renders icons via Font Awesome Free webfonts CDN, based on ordered list of entries.
+#   Entry keys:
+#     * title    Tooltip rendered on hovering over icon.
+#     * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
+#     * url      Full URL of social profile.
+social_links:
+  - title: GitHub Repository
+    icon: github
+    url: "https://github.com/gperdrizet/ariel-data-challenge"
+  - title: George Perdrizet on LinkedIn
+    icon: linkedin
+    url: "https://www.linkedin.com/in/gperdrizet"
 
-  # Minima date format.
-  #   The default value is "%b %d, %Y" (e.g. Nov 14, 2023).
-  #   Refer to https://shopify.github.io/liquid/filters/date/ for valid values.
-  # date_format: "%b-%d-%Y"
-
-  # Social Media Links
-  #   Renders icons via Font Awesome Free webfonts CDN, based on ordered list of entries.
-  #   Entry keys:
-  #     * title    Tooltip rendered on hovering over icon.
-  #     * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
-  #     * url      Full URL of social profile.
-  social_links:
-    - title: GitHub Repository
-      icon: github
-      url: "https://github.com/gperdrizet/ariel-data-challenge"
-    - title: George Perdrizet on LinkedIn
-      icon: linkedin
-      url: "https://www.linkedin.com/in/gperdrizet"
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
