@@ -12,6 +12,13 @@
 		}
 	},
 
+	"forwardPorts": [4000],
+	"portsAttributes": {
+		"4000": {
+			"label": "jekyll server"
+		}
+	},
+
 	// Custom configuration options
 	"customizations": {
 	  "vscode": {
