@@ -37,6 +37,7 @@ remote_theme: "jekyll/minima@1e8a445"
 # twitter_username: jekyllrb
 # github_username:  gperdrizet
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
 
