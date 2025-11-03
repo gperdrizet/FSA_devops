@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Fullstack Academy AI ML
+title: Fullstack Academy AI/ML
 
 author:
   name: George Perdrizet
