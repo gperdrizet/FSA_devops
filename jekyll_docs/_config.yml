@@ -18,21 +18,49 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+title: Fullstack Academy AI/ML
 
-# Build settings
+author:
+  name: George Perdrizet
+  email: george.perdrizet@fullstackacademy.com
+
+description: >
+  GiHub pages blog for updates, additional resources and how-to guides related to the Fullstack Academy AI/ML program.
+
 theme: minima
+
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+# github_username:  gperdrizet
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
+sass:
+  quiet_deps: true
+  silence_deprecations: [import]
+
+# Build settings
+minima:
+  skin: classic
+
+# Set to `true` to show excerpts on the homepage.
+show_excerpts: true
+
+# Social Media Links
+#   Renders icons via Font Awesome Free webfonts CDN, based on ordered list of entries.
+#   Entry keys:
+#     * title    Tooltip rendered on hovering over icon.
+#     * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
+#     * url      Full URL of social profile.
+social_links:
+  - title: GitHub Repository
+    icon: github
+    url: "https://github.com/gperdrizet/ariel-data-challenge"
+  - title: George Perdrizet on LinkedIn
+    icon: linkedin
+    url: "https://www.linkedin.com/in/gperdrizet"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
