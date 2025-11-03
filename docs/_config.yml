@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Fullstack Academy AI/ML
+title: Fullstack Academy AI ML
 
 author:
   name: George Perdrizet
@@ -27,13 +27,17 @@ author:
 description: >
   GiHub pages blog for updates, additional resources and how-to guides related to the Fullstack Academy AI/ML program.
 
-theme: minima
+baseurl: ""
+url: "https://gperdrizet.github.io"
+
+remote_theme: "jekyll/minima@1e8a445"
 
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  gperdrizet
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
 
@@ -44,6 +48,11 @@ sass:
 # Build settings
 minima:
   skin: classic
+
+nav_pages:
+  - resources.md
+  - notebooks.md
+  - about.md
 
 # Set to `true` to show excerpts on the homepage.
 show_excerpts: true
@@ -57,7 +66,7 @@ show_excerpts: true
 social_links:
   - title: GitHub Repository
     icon: github
-    url: "https://github.com/gperdrizet/ariel-data-challenge"
+    url: "https://github.com/gperdrizet/FSA_devops"
   - title: George Perdrizet on LinkedIn
     icon: linkedin
     url: "https://www.linkedin.com/in/gperdrizet"
