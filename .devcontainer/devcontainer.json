@@ -19,12 +19,14 @@
 				"/usr/bin/python3.13",
 				"/usr/local/bin/python3"
 			],
-			"remote.restoreForwardedPorts": false
+			"remote.restoreForwardedPorts": false,
+			"remote.autoForwardPorts": false
 		},
 
 		// Add the IDs of VS code extensions you want to install here
 		"extensions": [
 		  "-dbaeumer.vscode-eslint",
+		  "-ms-python.vscode-pylance",
 		  "ms-python.python",
 		  "ms-toolsai.jupyter",
 		  "streetsidesoftware.code-spell-checker",
