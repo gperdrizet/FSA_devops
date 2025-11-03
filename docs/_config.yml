@@ -27,8 +27,8 @@ author:
 description: >
   GiHub pages blog for updates, additional resources and how-to guides related to the Fullstack Academy AI/ML program.
 
-baseurl: ""
-url: "https://gperdrizet.github.io"
+# baseurl: ""
+# url: "https://gperdrizet.github.io"
 
 remote_theme: "jekyll/minima@1e8a445"
 
