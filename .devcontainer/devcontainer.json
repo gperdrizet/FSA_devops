@@ -19,7 +19,6 @@
 				"/usr/bin/python3.13",
 				"/usr/local/bin/python3"
 			],
-			"remote.autoForwardPorts": false,
 			"remote.restoreForwardedPorts": false
 		},
 
@@ -36,10 +35,10 @@
 	},
 
 	// Use 'onCreateCommand' to run commands once when the container is created
-	"onCreateCommand": "sudo apt update && sudo apt upgrade -y && pip3 install --upgrade pip && pip3 install --user -r requirements.txt"
+	"onCreateCommand": "sudo apt update && sudo apt upgrade -y && pip3 install --upgrade pip && pip3 install --user -r requirements.txt",
 
 	// Use 'postCreateCommand' to run commands once after the container is created
-	//"postCreateCommand": "",
+	"postCreateCommand": "sudo apt-get install ruby-full -y"
 
 	// Use 'postAttachCommand' to run commands each time a user connects to the container
 	//"postAttachCommand": ""
