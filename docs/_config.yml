@@ -27,9 +27,6 @@ author:
 description: >
   GiHub pages blog for updates, additional resources and how-to guides related to the Fullstack Academy AI/ML program.
 
-# baseurl: ""
-# url: "https://gperdrizet.github.io"
-
 remote_theme: "jekyll/minima@1e8a445"
 
 # baseurl: "" # the subpath of your site, e.g. /blog
@@ -47,14 +44,13 @@ sass:
 # Build settings
 minima:
   skin: classic
+  # Set to `true` to show excerpts on the homepage.
+  show_excerpts: true
 
 nav_pages:
   - resources.md
   - notebooks.md
   - about.md
-
-# Set to `true` to show excerpts on the homepage.
-show_excerpts: true
 
 # Social Media Links
 #   Renders icons via Font Awesome Free webfonts CDN, based on ordered list of entries.
