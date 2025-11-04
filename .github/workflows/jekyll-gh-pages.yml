@@ -32,6 +32,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Create _site directory
         run: mkdir -p ./docs/_site
+      - name: Create notebooks directory
+        run: mkdir -p ./docs/assets/notebooks
       - name: Move notebooks into build directory
         run: cp -r ./notebooks/* ./docs/assets/notebooks/
       - name: Move notebook config file into build directory
