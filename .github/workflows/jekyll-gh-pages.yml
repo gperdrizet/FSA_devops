@@ -38,6 +38,8 @@ jobs:
         run: cp -r ./notebooks/* ./docs/assets/notebooks/
       - name: Move notebook config file into build directory
         run: cp -r ./notebooks/notebooks.yml ./docs/_data/
+      - name: Move resources page into build directory
+        run: cp ./resources.md ./docs/
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
