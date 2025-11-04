@@ -97,5 +97,5 @@ units:
         notebooks:
           - name: "In-class demo"
             file: "Lesson_11_demo.ipynb"
-          - name: "Activity solution"
+          - name: "Vocareum activity solution"
             file: "Lesson_11_activity_solution.ipynb"
