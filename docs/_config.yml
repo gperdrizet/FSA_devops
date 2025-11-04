@@ -47,10 +47,10 @@ minima:
   # Set to `true` to show excerpts on the homepage.
   show_excerpts: true
 
-nav_pages:
-  - resources.md
-  - notebooks.md
-  - about.md
+# nav_pages:
+#   - resources.md
+#   - notebooks.md
+#   - about.md
 
 # Social Media Links
 #   Renders icons via Font Awesome Free webfonts CDN, based on ordered list of entries.
@@ -58,13 +58,13 @@ nav_pages:
 #     * title    Tooltip rendered on hovering over icon.
 #     * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
 #     * url      Full URL of social profile.
-social_links:
-  - title: GitHub Repository
-    icon: github
-    url: "https://github.com/gperdrizet/FSA_devops"
-  - title: George Perdrizet on LinkedIn
-    icon: linkedin
-    url: "https://www.linkedin.com/in/gperdrizet"
+  social_links:
+    - title: GitHub Repository
+      icon: github
+      url: "https://github.com/gperdrizet/FSA_devops"
+    - title: George Perdrizet on LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/gperdrizet"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
