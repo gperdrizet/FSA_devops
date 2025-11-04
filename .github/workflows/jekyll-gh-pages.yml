@@ -32,6 +32,10 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Create _site directory
         run: mkdir -p ./docs/_site
+      - name: Move notebooks into build directory
+        run: cp -r ./notebooks/* ./docs/assets/notebooks/
+      - name: Move notebook config file into build directory
+        run: cp -r ./notebooks/notebooks.yml ./docs/_data/
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
