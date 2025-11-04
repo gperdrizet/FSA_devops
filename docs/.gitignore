@@ -4,4 +4,4 @@ _site
 .jekyll-metadata
 Gemfile.lock
 vendor
-docs/assets/notebooks
+notebooks

@@ -33,13 +33,13 @@ permalink: /notebooks/
                     <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
                 </a>
                 {% else %}
-                <a href="https://github.com/gperdrizet/FSA_devops/blob/main/notebooks/unit{{ unit.number }}/{{ notebook.file }}">
+                <a href="https://github.com/gperdrizet/FSA_devops/blob/main/notebooks/unit{{ unit.number }}/lesson_{{ lesson.number }}/{{ notebook.file }}">
                     <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
                 </a>
                 {% endif %}
             </td>
             <td style="text-align: center;">
-                <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit{{ unit.number }}/{{ notebook.file }}" download>
+                <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit{{ unit.number }}/lesson_{{ lesson.number }}/{{ notebook.file }}" download>
                     <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
                 </a>
             </td>
