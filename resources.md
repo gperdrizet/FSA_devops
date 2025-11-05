@@ -35,6 +35,11 @@ permalink: /resources/
     - [GitHub repository](https://github.com/matplotlib/matplotlib)
     - [PyPI package page](https://pypi.org/project/matplotlib)
 
+4. Seaborn
+    - [Official documentation](https://seaborn.pydata.org/index.html)
+    - [GitHub repository](https://github.com/mwaskom/seaborn)
+    - [PyPI package page](https://pypi.org/project/seaborn)
+
 ---
 ## Other interesting links
 
@@ -46,5 +51,14 @@ permalink: /resources/
     - For data pipeline workflow management see: [Luigi](https://github.com/spotify/luigi) or [Airflow](https://github.com/apache/airflow)
 
 2. Data visualization
-    - [The Python graph gallery](https://github.com/holtzy/The-Python-Graph-Gallery/tree/master)
-    - [Data to vis](https://www.data-to-viz.com)
+    - [The Python graph gallery](https://github.com/holtzy/The-Python-Graph-Gallery/tree/master): lots different plot examples
+    - [Data to vis](https://www.data-to-viz.com): example plots by data type
+    - [PyWaffle](https://pywaffle.readthedocs.io/en/latest) 'waffle' style proportion plots in python
+    - [squarify](https://github.com/laserson/squarify)
+
+---
+## Incremental capstone slides
+
+### Unit 2: applied data science with Python
+
+1. [Incremental capstone 1: import and clean data](https://gperdrizet.github.io/FSA_devops/assets/slides/Capstone_Session_1.pdf)
