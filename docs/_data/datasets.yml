@@ -1,0 +1,27 @@
+units:
+  - name: "Unit 2: Applied data science with Python"
+    number: 2
+    lessons:
+      
+      - number: "10"
+        title: "Pandas"
+        assignment: "Lesson 10 activity"
+        datasets:
+          - name: "Student performance data"
+            file: "students.csv"
+          - name: "Electronics sales data"
+            file: "sales.csv"
+      
+      - number: "INC1"
+        title: "Incremental capstone 1"
+        assignment: "Import and clean data"
+        datasets:
+          - name: "NSMES 1988 patient data"
+            file: "NSMES1988-NSMES1988.csv"
+      
+      - number: "11"
+        title: "Data visualization"
+        assignment: "Lesson 11 activity"
+        datasets:
+          - name: "Real estate sales data"
+            file: "housing_data.csv"
