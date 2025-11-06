@@ -1,0 +1,58 @@
+# Workflow for building a Jekyll site for deployment to GitHub Pages
+name: GitHub pages build
+
+# Runs on pull request creation
+on:
+  pull_request:
+    types: [opened, reopened]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent build, skipping runs queued between the run in-progress and latest queued.
+concurrency:
+  group: "build-pages"
+  cancel-in-progress: false
+
+jobs:
+  # Build job
+  build:
+    name: Test build pages site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Create _site directory
+        run: mkdir -p ./site/_site
+
+      - name: Create notebooks directory
+        run: mkdir -p ./site/assets/notebooks
+      - name: Move notebooks into build directory
+        run: cp -r ./notebooks/* ./site/assets/notebooks/
+      - name: Move notebook config file into build directory
+        run: cp -r ./notebooks/notebooks.yml ./site/_data/
+
+      - name: Create data directory
+        run: mkdir -p ./site/assets/data
+      - name: Move datasets into build directory
+        run: cp -r ./data/* ./site/assets/data/
+      - name: Move dataset config file into build directory
+        run: cp -r ./data/datasets.yml ./site/_data/
+
+      - name: Move resources page into build directory
+        run: cp ./resources.md ./site/
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./site
+          destination: ./site/_site
