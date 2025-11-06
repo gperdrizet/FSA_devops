@@ -29,11 +29,11 @@ permalink: /notebooks/
             <td>{{ notebook.name }}</td>
             <td style="text-align: center;">
                 {% if notebook.github %}
-                <a href="{{ notebook.github }}">
+                <a href="{{ notebook.github }}" target="_blank">
                     <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
                 </a>
                 {% else %}
-                <a href="https://github.com/gperdrizet/FSA_devops/blob/main/notebooks/unit{{ unit.number }}/lesson_{{ lesson.number }}/{{ notebook.file }}">
+                <a href="https://github.com/gperdrizet/FSA_devops/blob/main/notebooks/unit{{ unit.number }}/lesson_{{ lesson.number }}/{{ notebook.file }}" target="_blank">
                     <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
                 </a>
                 {% endif %}
