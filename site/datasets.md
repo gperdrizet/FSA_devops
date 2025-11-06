@@ -29,11 +29,11 @@ permalink: /datasets/
             <td>{{ dataset.name }}</td>
             <td style="text-align: center;">
                 {% if dataset.github %}
-                <a href="{{ dataset.github }}">
+                <a href="{{ dataset.github }}" target="_blank">
                     <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
                 </a>
                 {% else %}
-                <a href="https://github.com/gperdrizet/FSA_devops/blob/main/data/unit{{ unit.number }}/{{ dataset.file }}">
+                <a href="https://github.com/gperdrizet/FSA_devops/blob/main/data/unit{{ unit.number }}/{{ dataset.file }}" target="_blank">
                     <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
                 </a>
                 {% endif %}
