@@ -1,5 +1,5 @@
 # Workflow for building a Jekyll site for deployment to GitHub Pages
-name: GitHub pages build
+name: Pages test
 
 # Runs on pull request creation
 on:
@@ -56,3 +56,20 @@ jobs:
         with:
           source: ./site
           destination: ./site/_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site/_site
+
+  # Deployment job
+  deploy:
+    name: Test deploy pages site
+    environment:
+      name: github-pages-test
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
