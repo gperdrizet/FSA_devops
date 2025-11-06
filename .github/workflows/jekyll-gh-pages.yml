@@ -32,35 +32,35 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Create _site directory
-        run: mkdir -p ./docs/_site
+        run: mkdir -p ./site/_site
 
       - name: Create notebooks directory
-        run: mkdir -p ./docs/assets/notebooks
+        run: mkdir -p ./site/assets/notebooks
       - name: Move notebooks into build directory
-        run: cp -r ./notebooks/* ./docs/assets/notebooks/
+        run: cp -r ./notebooks/* ./site/assets/notebooks/
       - name: Move notebook config file into build directory
-        run: cp -r ./notebooks/notebooks.yml ./docs/_data/
+        run: cp -r ./notebooks/notebooks.yml ./site/_data/
 
       - name: Create data directory
-        run: mkdir -p ./docs/assets/data
+        run: mkdir -p ./site/assets/data
       - name: Move datasets into build directory
-        run: cp -r ./data/* ./docs/assets/data/
+        run: cp -r ./data/* ./site/assets/data/
       - name: Move dataset config file into build directory
-        run: cp -r ./data/datasets.yml ./docs/_data/
+        run: cp -r ./data/datasets.yml ./site/_data/
 
       - name: Move resources page into build directory
-        run: cp ./resources.md ./docs/
+        run: cp ./resources.md ./site/
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./docs
-          destination: ./docs/_site
+          source: ./site
+          destination: ./site/_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs/_site
+          path: ./site/_site
 
   # Deployment job
   deploy:
