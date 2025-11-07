@@ -110,3 +110,5 @@ units:
             file: "Lesson_12_statistics_demo.ipynb"
           - name: "Lesson 12 activity"
             file: "Lesson_12_activity.ipynb"
+          - name: "Anscombe's quartet demo"
+            file: "anscombes_quartet.ipynb"
