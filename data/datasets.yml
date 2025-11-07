@@ -25,3 +25,12 @@ units:
         datasets:
           - name: "Real estate sales data"
             file: "housing_data.csv"
+
+      - number: "12"
+        title: "Math and statistics fundamentals"
+        assignment: "Lesson 12 activity"
+        datasets:
+          - name: "Synthetic fitness and biometric data"
+            file: "fitness.csv"
+          - name: "Synthetic meteorology data"
+            file: "weather.csv"

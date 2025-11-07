@@ -99,3 +99,14 @@ units:
             file: "Lesson_11_demo.ipynb"
           - name: "Vocareum activity solution"
             file: "Lesson_11_activity_solution.ipynb"
+
+      - number: "12"
+        title: "Math and statistics fundamentals"
+        topics: "Linear algebra, statistics basics"
+        notebooks:
+          - name: "Feature space and model complexity demo"
+            file: "Lesson_12_linear_algebra_demo.ipynb"
+          - name: "Statistical data types demo"
+            file: "Lesson_12_statistics_demo.ipynb"
+          - name: "Lesson 12 activity"
+            file: "Lesson_12_activity.ipynb"
