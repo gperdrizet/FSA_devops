@@ -112,3 +112,12 @@ units:
             file: "Lesson_12_activity.ipynb"
           - name: "Anscombe's quartet demo"
             file: "anscombes_quartet.ipynb"
+
+      - number: "13"
+        title: "Probability distributions"
+        topics: "Discrete and continuous distributions, central limit theorem"
+        notebooks:
+          - name: "In class demo"
+            file: "Lesson_13_demo.ipynb"
+          - name: "Activity"
+            file: "Lesson_13_activity.ipynb"
