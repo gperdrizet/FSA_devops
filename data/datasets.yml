@@ -34,3 +34,10 @@ units:
             file: "fitness.csv"
           - name: "Synthetic meteorology data"
             file: "weather.csv"
+
+      - number: "13"
+        title: "Probability distributions"
+        assignment: "Lesson 12 activity"
+        datasets:
+          - name: "Synthetic online sales data"
+            file: "online_sales.csv"
