@@ -7,6 +7,24 @@ nav_exclude: true
 
 # Statistics Overview
 
+Statistics is the foundation of data science, providing the mathematical framework for analyzing data, quantifying uncertainty, and making informed decisions. This guide covers essential descriptive statistics, probability distributions, and hypothesis testing methods used in data analysis.
+
+## Table of Contents
+1. [Common Descriptive Statistics](#1-common-descriptive-statistics)
+   - [Measures of Central Tendency, Spread, and Shape](#11-measures-of-central-tendency-spread-and-shape)
+   - [Interpretation Guidelines](#12-interpretation-guidelines)
+   - [Choosing the Right Statistic](#13-choosing-the-right-statistic)
+   - [Important Notes](#14-important-notes)
+2. [Common Probability Distributions](#2-common-probability-distributions)
+   - [Discrete and Continuous Probability Distributions](#21-discrete-and-continuous-probability-distributions)
+   - [Key Properties by Distribution](#13-key-properties-by-distribution)
+3. [Statistical Test Selection Guide](#3-statistical-test-selection-guide)
+   - [Hypothesis Testing by Scenario](#31-hypothesis-testing-by-scenario)
+   - [Test Assumptions Checklist](#32-test-assumptions-checklist)
+   - [Multiple Testing Correction](#33-multiple-testing-correction)
+
+---
+
 ## 1. Common Descriptive Statistics
 
 Descriptive statistics summarize and describe the main features of a dataset. They are divided into three main categories based on what aspect of the data they measure.
