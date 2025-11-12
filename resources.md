@@ -7,6 +7,7 @@ permalink: /resources/
 ## How-to Guides & Instructions
 
 1. [DevOps Guides Overview](https://gperdrizet.github.io/FSA_devops/devops_pages/overview.html)
+2. [Statistics Overview](https://gperdrizet.github.io/FSA_devops/resource_pages/statistics.html)
 
 ---
 ## Cheat sheets & syntax reference
@@ -20,25 +21,35 @@ permalink: /resources/
 ---
 ## Data science library information
 
-1. NumPy
-    - [Official documentation](https://numpy.org/doc/stable/index.html){:target="_blank"}
-    - [GitHub repository](https://github.com/numpy/numpy){:target="_blank"}
-    - [PyPI package page](https://pypi.org/project/numpy){:target="_blank"}
+1. **NumPy**: A core library for efficient numerical computations and multi-dimensional array operations in Python.
+    - <a href="https://numpy.org/doc/stable/index.html" target="_blank">Official documentation</a>
+    - <a href="https://github.com/numpy/numpy" target="_blank">GitHub repository</a>
+    - <a href="https://pypi.org/project/numpy" target="_blank">PyPI package page</a>
 
-2. Pandas
-    - [Official documentation](https://pandas.pydata.org/docs){:target="_blank"}
-    - [GitHub repository](https://github.com/pandas-dev/pandas){:target="_blank"}
-    - [PyPI package page](https://pypi.org/project/pandas){:target="_blank"}
+2. **Pandas**: Provides high-level data structures (DataFrame, Series) and powerful tools for data manipulation and analysis.
+    - <a href="https://pandas.pydata.org/docs" target="_blank">Official documentation</a>
+    - <a href="https://github.com/pandas-dev/pandas" target="_blank">GitHub repository</a>
+    - <a href="https://pypi.org/project/pandas" target="_blank">PyPI package page</a>
 
-3. Matplotlib
-    - [Official documentation](https://matplotlib.org/stable/index.html){:target="_blank"}
-    - [GitHub repository](https://github.com/matplotlib/matplotlib){:target="_blank"}
-    - [PyPI package page](https://pypi.org/project/matplotlib){:target="_blank"}
+3. **Matplotlib**: A versatile plotting library for creating static, animated, and interactive visualizations in Python.
+    - <a href="https://matplotlib.org/stable/index.html" target="_blank">Official documentation</a>
+    - <a href="https://github.com/matplotlib/matplotlib" target="_blank">GitHub repository</a>
+    - <a href="https://pypi.org/project/matplotlib" target="_blank">PyPI package page</a>
 
-4. Seaborn
-    - [Official documentation](https://seaborn.pydata.org/index.html){:target="_blank"}
-    - [GitHub repository](https://github.com/mwaskom/seaborn){:target="_blank"}
-    - [PyPI package page](https://pypi.org/project/seaborn){:target="_blank"}
+4. **Seaborn**: A statistical data visualization library built on Matplotlib that provides attractive themes and higher-level plotting functions.
+    - <a href="https://seaborn.pydata.org/index.html" target="_blank">Official documentation</a>
+    - <a href="https://github.com/mwaskom/seaborn" target="_blank">GitHub repository</a>
+    - <a href="https://pypi.org/project/seaborn" target="_blank">PyPI package page</a>
+
+5. **SciPy**: A collection of scientific computing tools built on NumPy for optimization, integration, signal processing, and more.
+    - <a href="https://scipy.org" target="_blank">Official documentation</a>
+    - <a href="https://github.com/scipy/scipy" target="_blank">GitHub repository</a>
+    - <a href="https://pypi.org/project/scipy" target="_blank">PyPI package page</a>
+
+6. **Statsmodels**: Offers classes and functions for estimating statistical models, conducting hypothesis tests, and performing data exploration.
+    - <a href="https://www.statsmodels.org/stable/index.html" target="_blank">Official documentation</a>
+    - <a href="https://github.com/statsmodels/statsmodels" target="_blank">GitHub repository</a>
+    - <a href="https://pypi.org/project/statsmodels" target="_blank">PyPI package</a>
 
 ---
 ## Other interesting links

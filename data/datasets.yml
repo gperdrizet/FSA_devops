@@ -37,7 +37,7 @@ units:
 
       - number: "13"
         title: "Probability distributions"
-        assignment: "Lesson 12 activity"
+        assignment: "Lesson 13 demo"
         datasets:
           - name: "Synthetic online sales data"
             file: "online_sales.csv"
