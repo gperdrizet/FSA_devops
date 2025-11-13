@@ -46,15 +46,53 @@ Data visualization is essential for exploring, understanding, and communicating 
 
 ### 1.2. By Data Type Combination
 
-| **X Variable** | **Y Variable** | **Z Variable (optional)** | **Recommended Plots** |
-|----------------|----------------|---------------------------|----------------------|
-| Continuous | None | None | Histogram, Box plot, Violin plot, Density plot |
-| Categorical | None | None | Bar chart, Pie chart, Count plot |
-| Continuous | Continuous | None | Scatter plot, Line plot, Hexbin, 2D density |
-| Categorical | Continuous | None | Box plot, Violin plot, Bar chart, Strip plot |
-| Categorical | Categorical | None | Heatmap, Stacked bar chart, Grouped bar chart |
-| Continuous | Continuous | Continuous | 3D scatter, Bubble chart, Contour plot |
-| Continuous | Continuous | Categorical | Scatter with hue, Facet grid |
+<table>
+  <thead>
+    <tr>
+      <th><strong>X Variable</strong></th>
+      <th><strong>Y Variable</strong></th>
+      <th><strong>Z Variable (optional)</strong></th>
+      <th><strong>Recommended Plots</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3"><strong>Categorical</strong></td>
+      <td><strong>None</strong></td>
+      <td>None</td>
+      <td>Bar chart, Pie chart, Count plot</td>
+    </tr>
+    <tr>
+      <td><strong>Continuous</strong></td>
+      <td>None</td>
+      <td>Box plot, Violin plot, Bar chart, Strip plot</td>
+    </tr>
+    <tr>
+      <td><strong>Categorical</strong></td>
+      <td>None</td>
+      <td>Heatmap, Stacked bar chart, Grouped bar chart</td>
+    </tr>
+    <tr>
+      <td rowspan="4"><strong>Continuous</strong></td>
+      <td><strong>None</strong></td>
+      <td>None</td>
+      <td>Histogram, Box plot, Violin plot, Density plot</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>Continuous</strong></td>
+      <td>None</td>
+      <td>Scatter plot, Line plot, Hexbin, 2D density</td>
+    </tr>
+    <tr>
+      <td>Continuous</td>
+      <td>3D scatter, Bubble chart, Contour plot</td>
+    </tr>
+    <tr>
+      <td>Categorical</td>
+      <td>Scatter with hue, Facet grid</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ---
