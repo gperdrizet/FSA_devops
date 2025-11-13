@@ -132,7 +132,7 @@ Probability distributions describe the likelihood of different outcomes in a ran
 **Geometric Distribution**
 - Mean: E[X] = 1/p
 - Variance: Var(X) = (1-p)/p²
-- Memoryless property: P(X > s+t | X > s) = P(X > t)
+- Memoryless property: P(X > s+t \| X > s) = P(X > t)
 
 #### 1.3.2. Continuous Distributions
 
@@ -254,7 +254,7 @@ Multiple testing correction methods are available in the `multipletests` class f
    - Adjusted α = α / number of tests
    - Example: For 10 tests at α = 0.05, use α = 0.005 for each test
    - Best for: Small number of tests, when minimizing false positives is critical
-   - Python: ``multipletests(pvals, method='bonferroni')`
+   - Python: `multipletests(pvals, method='bonferroni')`
 
 2. **Holm-Bonferroni (Sequential Bonferroni)**
    - Less conservative than Bonferroni
