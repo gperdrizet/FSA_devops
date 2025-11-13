@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Statistics
+title: Statistics Overview
 permalink: /resource_pages/statistics.html
 nav_exclude: true
 ---
-
-# Statistics Overview
 
 Statistics is the foundation of data science, providing the mathematical framework for analyzing data, quantifying uncertainty, and making informed decisions. This guide covers essential descriptive statistics, probability distributions, and hypothesis testing methods used in data analysis.
 

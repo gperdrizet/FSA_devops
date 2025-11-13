@@ -5,8 +5,6 @@ permalink: /devops_pages/macos.html
 nav_exclude: true
 ---
 
-## Setting up your macOS development environment
-
 This guide will walk you through installing and configuring Git, Python, and Visual Studio Code on macOS.
 
 ### 1. Installing Homebrew (Recommended)
