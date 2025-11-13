@@ -14,8 +14,6 @@ Statistics is the foundation of data science, providing the mathematical framewo
    - [Choosing the Right Statistic](#13-choosing-the-right-statistic)
    - [Important Notes](#14-important-notes)
 2. [Common Probability Distributions](#2-common-probability-distributions)
-   - [Discrete and Continuous Probability Distributions](#21-discrete-and-continuous-probability-distributions)
-   - [Key Properties by Distribution](#13-key-properties-by-distribution)
 3. [Statistical Test Selection Guide](#3-statistical-test-selection-guide)
    - [Hypothesis Testing by Scenario](#31-hypothesis-testing-by-scenario)
    - [Test Assumptions Checklist](#32-test-assumptions-checklist)
@@ -103,8 +101,6 @@ Descriptive statistics summarize and describe the main features of a dataset. Th
 
 Probability distributions describe the likelihood of different outcomes in a random process. They are fundamental to statistical inference, hypothesis testing, and predictive modeling.
 
-### 2.1. Discrete and Continuous Probability Distributions
-
 <table>
   <thead>
     <tr>
@@ -134,79 +130,6 @@ Probability distributions describe the likelihood of different outcomes in a ran
     {% endfor %}
   </tbody>
 </table>
-
-### 1.3. Key Properties by Distribution
-
-#### 1.3.1. Discrete Distributions
-
-**Bernoulli Distribution**
-- Mean: E[X] = p
-- Variance: Var(X) = p(1-p)
-- Use when: Single binary trial
-
-**Binomial Distribution**
-- Mean: E[X] = np
-- Variance: Var(X) = np(1-p)
-- Use when: Counting successes in fixed number of trials
-- Approximates normal when np > 5 and n(1-p) > 5
-
-**Poisson Distribution**
-- Mean: E[X] = λ
-- Variance: Var(X) = λ
-- Use when: Counting rare events in time/space
-- Approximates binomial when n is large and p is small
-
-**Geometric Distribution**
-- Mean: E[X] = 1/p
-- Variance: Var(X) = (1-p)/p²
-- Memoryless property: P(X > s+t \| X > s) = P(X > t)
-
-#### 1.3.2. Continuous Distributions
-
-**Uniform Distribution**
-- Mean: E[X] = (a+b)/2
-- Variance: Var(X) = (b-a)²/12
-- Use when: All outcomes equally likely
-
-**Normal Distribution**
-- Mean: E[X] = μ
-- Variance: Var(X) = σ²
-- 68-95-99.7 rule: 68% within ±1σ, 95% within ±2σ, 99.7% within ±3σ
-- Central Limit Theorem: Sum/average of many random variables → Normal
-
-**Exponential Distribution**
-- Mean: E[X] = 1/λ
-- Variance: Var(X) = 1/λ²
-- Memoryless property like geometric
-- Use when: Time between Poisson events
-
-**Gamma Distribution**
-- Mean: E[X] = kθ
-- Variance: Var(X) = kθ²
-- Special case: k=1 gives exponential distribution
-
-**Beta Distribution**
-- Mean: E[X] = α/(α+β)
-- Variance: Var(X) = αβ/[(α+β)²(α+β+1)]
-- Flexible shape: can be uniform, U-shaped, or skewed
-- Conjugate prior for binomial/Bernoulli
-
-**Chi-Square Distribution**
-- Mean: E[X] = df
-- Variance: Var(X) = 2·df
-- Always positive, right-skewed
-- Approaches normal as df increases
-
-**Student's t-Distribution**
-- Mean: E[X] = 0 (for df > 1)
-- Variance: Var(X) = df/(df-2) (for df > 2)
-- Approaches standard normal as df → ∞
-- Use when: Population variance unknown, small samples
-
-**F-Distribution**
-- Always positive, right-skewed
-- Used for comparing variances
-- F = (χ²₁/df₁)/(χ²₂/df₂)
 
 ---
 
