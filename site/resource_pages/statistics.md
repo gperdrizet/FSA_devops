@@ -187,26 +187,9 @@ Probability distributions describe the likelihood of different outcomes in a ran
 
 This comprehensive guide helps you choose the appropriate statistical test based on your research question, variable types, and data characteristics.
 
-### 3.1. Hypothesis Testing by Scenario
-
-| **Situation** | **Independent Variable Type** | **Dependent Variable Type** | **Parametric Test** | **Non-Parametric Test** | **P-value Interpretation** |
-|---------------|-------------------------------|----------------------------|---------------------|-------------------------|----------------------------|
-| **Comparing one sample to a known value** | None (fixed value) | Continuous | One-sample T-test / Z-test | Wilcoxon signed-rank test | Low p-value: Sample mean significantly differs from known value |
-| **Comparing two independent groups** | Categorical (2 groups) | Continuous | Independent samples T-test / Two-sample Z-test | Mann-Whitney U test (Wilcoxon rank-sum test) | Low p-value: Significant difference between the two groups |
-| **Comparing two paired/dependent groups** | Categorical (2 conditions) | Continuous | Paired T-test | Wilcoxon signed-rank test | Low p-value: Significant change between paired observations |
-| **Comparing three or more independent groups** | Categorical (3+ groups) | Continuous | One-way ANOVA | Kruskal-Wallis H test | Low p-value: At least one group differs from the others |
-| **Comparing three or more paired/dependent groups** | Categorical (3+ conditions) | Continuous | Repeated measures ANOVA | Friedman test | Low p-value: Significant differences across repeated measurements |
-| **Testing relationship between two continuous variables** | Continuous | Continuous | Pearson correlation | Spearman rank correlation / Kendall's tau | Low p-value: Significant correlation exists between variables |
-| **Comparing distributions of categorical variables** | None (comparing to expected) | Categorical | Chi-square test | Fisher's exact test (for small samples) | Low p-value: Observed distribution differs from expected |
-| **Testing independence of two categorical variables** | Categorical | Categorical | Chi-square test of independence | Fisher's exact test | Low p-value: Variables are dependent (not independent) |
-| **Comparing variances between two groups** | Categorical (2 groups) | Continuous (variance) | F-test (Levene's test) | Levene's test / Fligner-Killeen test | Low p-value: Variances significantly differ between groups |
-| **Testing effects of two or more factors** | Categorical (2+ factors) | Continuous | Two-way ANOVA / Factorial ANOVA | Scheirer-Ray-Hare test | Low p-value: Significant main effects or interaction effects |
-| **Testing normality of data** | None (single sample) | Continuous | Shapiro-Wilk test | Kolmogorov-Smirnov test | Low p-value: Data significantly deviates from normal distribution |
-| **Comparing sample distribution to theoretical distribution** | None (comparing distributions) | Continuous | N/A | Kolmogorov-Smirnov test | Low p-value: Sample distribution differs from theoretical distribution |
-
 **Note**: Parametric tests assume normally distributed data and equal variances, while non-parametric tests make no assumptions about the underlying distribution and are more robust to outliers. A "low p-value" typically means p < 0.05 (or your chosen significance level α).
 
-### 3.2. Test Assumptions Checklist
+### 3.1. Test Assumptions Checklist
 
 Before conducting any statistical test, verify the following assumptions:
 
@@ -230,6 +213,23 @@ Before conducting any statistical test, verify the following assumptions:
 - Ordinal data or ranks
 - Presence of significant outliers
 - Violations of parametric test assumptions
+
+### 3.2. Hypothesis Testing by Scenario
+
+| **Situation** | **Independent Variable Type** | **Dependent Variable Type** | **Parametric Test** | **Non-Parametric Test** | **P-value Interpretation** |
+|---------------|-------------------------------|----------------------------|---------------------|-------------------------|----------------------------|
+| **Comparing one sample to a known value** | None (fixed value) | Continuous | One-sample T-test / Z-test | Wilcoxon signed-rank test | Low p-value: Sample mean significantly differs from known value |
+| **Comparing two independent groups** | Categorical (2 groups) | Continuous | Independent samples T-test / Two-sample Z-test | Mann-Whitney U test (Wilcoxon rank-sum test) | Low p-value: Significant difference between the two groups |
+| **Comparing two paired/dependent groups** | Categorical (2 conditions) | Continuous | Paired T-test | Wilcoxon signed-rank test | Low p-value: Significant change between paired observations |
+| **Comparing three or more independent groups** | Categorical (3+ groups) | Continuous | One-way ANOVA | Kruskal-Wallis H test | Low p-value: At least one group differs from the others |
+| **Comparing three or more paired/dependent groups** | Categorical (3+ conditions) | Continuous | Repeated measures ANOVA | Friedman test | Low p-value: Significant differences across repeated measurements |
+| **Testing relationship between two continuous variables** | Continuous | Continuous | Pearson correlation | Spearman rank correlation / Kendall's tau | Low p-value: Significant correlation exists between variables |
+| **Comparing distributions of categorical variables** | None (comparing to expected) | Categorical | Chi-square test | Fisher's exact test (for small samples) | Low p-value: Observed distribution differs from expected |
+| **Testing independence of two categorical variables** | Categorical | Categorical | Chi-square test of independence | Fisher's exact test | Low p-value: Variables are dependent (not independent) |
+| **Comparing variances between two groups** | Categorical (2 groups) | Continuous (variance) | F-test (Levene's test) | Levene's test / Fligner-Killeen test | Low p-value: Variances significantly differ between groups |
+| **Testing effects of two or more factors** | Categorical (2+ factors) | Continuous | Two-way ANOVA / Factorial ANOVA | Scheirer-Ray-Hare test | Low p-value: Significant main effects or interaction effects |
+| **Testing normality of data** | None (single sample) | Continuous | Shapiro-Wilk test | Kolmogorov-Smirnov test | Low p-value: Data significantly deviates from normal distribution |
+| **Comparing sample distribution to theoretical distribution** | None (comparing distributions) | Continuous | N/A | Kolmogorov-Smirnov test | Low p-value: Sample distribution differs from theoretical distribution |
 
 ### 3.3. Multiple Testing Correction
 
