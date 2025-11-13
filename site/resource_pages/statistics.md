@@ -246,25 +246,95 @@ Before conducting any statistical test, verify the following assumptions:
 <table>
   <thead>
     <tr>
-      <th><strong>Situation</strong></th>
       <th><strong>Independent Variable Type</strong></th>
       <th><strong>Dependent Variable Type</strong></th>
+      <th><strong>Situation</strong></th>
       <th><strong>Parametric Test</strong></th>
       <th><strong>Non-Parametric Test</strong></th>
       <th><strong>P-value Interpretation</strong></th>
     </tr>
   </thead>
   <tbody>
-    {% for test in site.data.statistics_tables.hypothesis_tests %}
-      <tr>
-        <td><strong>{{ test.situation }}</strong></td>
-        <td>{{ test.independent_var }}</td>
-        <td>{{ test.dependent_var }}</td>
-        <td>{{ test.parametric_test }}</td>
-        <td>{{ test.nonparametric_test }}</td>
-        <td>{{ test.p_value_interpretation }}</td>
-      </tr>
-    {% endfor %}
+    <tr>
+      <td rowspan="4">None</td>
+      <td rowspan="3">Continuous</td>
+      <td>Comparing one sample to a known value</td>
+      <td>One-sample T-test / Z-test</td>
+      <td>Wilcoxon signed-rank test</td>
+      <td>Low p-value: Sample mean significantly differs from known value</td>
+    </tr>
+    <tr>
+      <td>Testing normality of data</td>
+      <td>Shapiro-Wilk test</td>
+      <td>Kolmogorov-Smirnov test</td>
+      <td>Low p-value: Data significantly deviates from normal distribution</td>
+    </tr>
+    <tr>
+      <td>Comparing sample distribution to theoretical distribution</td>
+      <td>N/A</td>
+      <td>Kolmogorov-Smirnov test</td>
+      <td>Low p-value: Sample distribution differs from theoretical distribution</td>
+    </tr>
+    <tr>
+      <td>Categorical</td>
+      <td>Comparing distributions of categorical variables</td>
+      <td>Chi-square test</td>
+      <td>Fisher's exact test (for small samples)</td>
+      <td>Low p-value: Observed distribution differs from expected</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Categorical</td>
+      <td rowspan="6">Continuous</td>
+      <td>Comparing two independent groups</td>
+      <td>Independent samples T-test / Two-sample Z-test</td>
+      <td>Mann-Whitney U test (Wilcoxon rank-sum test)</td>
+      <td>Low p-value: Significant difference between the two groups</td>
+    </tr>
+    <tr>
+      <td>Comparing two paired/dependent groups</td>
+      <td>Paired T-test</td>
+      <td>Wilcoxon signed-rank test</td>
+      <td>Low p-value: Significant change between paired observations</td>
+    </tr>
+    <tr>
+      <td>Comparing three or more independent groups</td>
+      <td>One-way ANOVA</td>
+      <td>Kruskal-Wallis H test</td>
+      <td>Low p-value: At least one group differs from the others</td>
+    </tr>
+    <tr>
+      <td>Comparing three or more paired/dependent groups</td>
+      <td>Repeated measures ANOVA</td>
+      <td>Friedman test</td>
+      <td>Low p-value: Significant differences across repeated measurements</td>
+    </tr>
+    <tr>
+      <td>Testing effects of two or more factors</td>
+      <td>Two-way ANOVA / Factorial ANOVA</td>
+      <td>Scheirer-Ray-Hare test</td>
+      <td>Low p-value: Significant main effects or interaction effects</td>
+    </tr>
+    <tr>
+      <td>Comparing variances between two groups</td>
+      <td>F-test (Levene's test)</td>
+      <td>Levene's test / Fligner-Killeen test</td>
+      <td>Low p-value: Variances significantly differ between groups</td>
+    </tr>
+    <tr>
+      <td>Categorical</td>
+      <td>Testing independence of two categorical variables</td>
+      <td>Chi-square test of independence</td>
+      <td>Fisher's exact test</td>
+      <td>Low p-value: Variables are dependent (not independent)</td>
+    </tr>
+    <tr>
+      <td rowspan="1">Continuous</td>
+      <td rowspan="1">Continuous</td>
+      <td>Testing relationship between two continuous variables</td>
+      <td>Pearson correlation</td>
+      <td>Spearman rank correlation / Kendall's tau</td>
+      <td>Low p-value: Significant correlation exists between variables</td>
+    </tr>
   </tbody>
 </table>
 
