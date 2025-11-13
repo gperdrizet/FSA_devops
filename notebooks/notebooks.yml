@@ -130,5 +130,7 @@ units:
         title: "Advanced statistics"
         topics: "Confidence intervals, hypothesis testing"
         notebooks:
+          - name: "In class demo"
+            file: "Lesson_14_demo.ipynb"
           - name: "Activity"
             file: "Lesson_14_activity.ipynb"
