@@ -256,8 +256,8 @@ Before conducting any statistical test, verify the following assumptions:
   </thead>
   <tbody>
     <tr>
-      <td rowspan="4">None</td>
-      <td rowspan="3">Continuous</td>
+      <td rowspan="4"><strong>None</strong></td>
+      <td rowspan="3"><strong>Continuous</strong></td>
       <td>Comparing one sample to a known value</td>
       <td>One-sample T-test / Z-test</td>
       <td>Wilcoxon signed-rank test</td>
@@ -276,15 +276,15 @@ Before conducting any statistical test, verify the following assumptions:
       <td>Low p-value: Sample distribution differs from theoretical distribution</td>
     </tr>
     <tr>
-      <td>Categorical</td>
+      <td><strong>Categorical</strong></td>
       <td>Comparing distributions of categorical variables</td>
       <td>Chi-square test</td>
       <td>Fisher's exact test (for small samples)</td>
       <td>Low p-value: Observed distribution differs from expected</td>
     </tr>
     <tr>
-      <td rowspan="7">Categorical</td>
-      <td rowspan="6">Continuous</td>
+      <td rowspan="7"><strong>Categorical</strong></td>
+      <td rowspan="6"><strong>Continuous</strong></td>
       <td>Comparing two independent groups</td>
       <td>Independent samples T-test / Two-sample Z-test</td>
       <td>Mann-Whitney U test (Wilcoxon rank-sum test)</td>
@@ -321,15 +321,15 @@ Before conducting any statistical test, verify the following assumptions:
       <td>Low p-value: Variances significantly differ between groups</td>
     </tr>
     <tr>
-      <td>Categorical</td>
+      <td><strong>Categorical</strong></td>
       <td>Testing independence of two categorical variables</td>
       <td>Chi-square test of independence</td>
       <td>Fisher's exact test</td>
       <td>Low p-value: Variables are dependent (not independent)</td>
     </tr>
     <tr>
-      <td rowspan="1">Continuous</td>
-      <td rowspan="1">Continuous</td>
+      <td rowspan="1"><strong>Continuous</strong></td>
+      <td rowspan="1"><strong>Continuous</strong></td>
       <td>Testing relationship between two continuous variables</td>
       <td>Pearson correlation</td>
       <td>Spearman rank correlation / Kendall's tau</td>
