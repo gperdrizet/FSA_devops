@@ -134,3 +134,5 @@ units:
             file: "Lesson_14_demo.ipynb"
           - name: "Activity"
             file: "Lesson_14_activity.ipynb"
+          - name: "Activity solution"
+            file: "Lesson_14_activity_solution.ipynb"
