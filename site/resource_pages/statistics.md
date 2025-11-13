@@ -29,20 +29,34 @@ Descriptive statistics summarize and describe the main features of a dataset. Th
 
 ### 1.1. Measures of Central Tendency, Spread, and Shape
 
-| **Category** | **Statistic** | **Description** | **Formula / Calculation** | **When to Use** | **Python Implementation** |
-|--------------|---------------|-----------------|---------------------------|-----------------|---------------------------|
-| **Central Tendency** | **Mean (μ or x̄)** | Average of all values; sum divided by count | μ = Σx / n | Symmetric distributions without outliers | `np.mean(data)` or `data.mean()` |
-| **Central Tendency** | **Median** | Middle value when data is ordered; 50th percentile | Middle value or average of two middle values | Skewed distributions or data with outliers | `np.median(data)` or `data.median()` |
-| **Central Tendency** | **Mode** | Most frequently occurring value(s) | Value with highest frequency | Categorical data or multimodal distributions | `statistics.mode(data)` or `data.mode()` |
-| **Central Tendency** | **Trimmed Mean** | Mean after removing extreme values (e.g., top/bottom 5%) | Mean of remaining values after trimming | Data with outliers but want mean-like measure | `scipy.stats.trim_mean(data, 0.05)` |
-| **Spread** | **Range** | Difference between maximum and minimum values | Range = max - min | Quick measure of spread; sensitive to outliers | `np.ptp(data)` or `max(data) - min(data)` |
-| **Spread** | **Variance (σ² or s²)** | Average squared deviation from the mean | σ² = Σ(x - μ)² / n | Understanding variability; basis for other stats | `np.var(data)` or `data.var()` |
-| **Spread** | **Standard Deviation (σ or s)** | Square root of variance; typical distance from mean | σ = √(Σ(x - μ)² / n) | Most common spread measure; same units as data | `np.std(data)` or `data.std()` |
-| **Spread** | **Interquartile Range (IQR)** | Difference between 75th and 25th percentiles | IQR = Q3 - Q1 | Robust to outliers; used in boxplots | `scipy.stats.iqr(data)` or `data.quantile(0.75) - data.quantile(0.25)` |
-| **Spread** | **Mean Absolute Deviation (MAD)** | Average absolute deviation from the mean | MAD = Σ\|x - μ\| / n | Less sensitive to outliers than variance | `np.mean(np.abs(data - np.mean(data)))` |
-| **Spread** | **Coefficient of Variation (CV)** | Relative standard deviation (standardized measure) | CV = (σ / μ) × 100% | Comparing variability across different scales | `(np.std(data) / np.mean(data)) * 100` |
-| **Shape** | **Skewness** | Measure of asymmetry in the distribution | Positive: right tail; Negative: left tail; 0: symmetric | Assessing distribution symmetry | `scipy.stats.skew(data)` or `data.skew()` |
-| **Shape** | **Kurtosis** | Measure of tailedness (outlier propensity) | Positive: heavy tails; Negative: light tails; 0: normal | Identifying presence of outliers | `scipy.stats.kurtosis(data)` or `data.kurtosis()` |
+<table>
+  <thead>
+    <tr>
+      <th><strong>Category</strong></th>
+      <th><strong>Statistic</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Formula / Calculation</strong></th>
+      <th><strong>When to Use</strong></th>
+      <th><strong>Python Implementation</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for category_group in site.data.statistics_tables.descriptive_statistics %}
+      {% for stat in category_group.statistics %}
+        <tr>
+          {% if forloop.first %}
+            <td rowspan="{{ category_group.statistics.size }}"><strong>{{ category_group.category }}</strong></td>
+          {% endif %}
+          <td><strong>{{ stat.name }}</strong></td>
+          <td>{{ stat.description }}</td>
+          <td>{{ stat.formula }}</td>
+          <td>{{ stat.when_to_use }}</td>
+          <td>{{ stat.python }}</td>
+        </tr>
+      {% endfor %}
+    {% endfor %}
+  </tbody>
+</table>
 
 ### 1.2. Interpretation Guidelines
 
@@ -91,20 +105,35 @@ Probability distributions describe the likelihood of different outcomes in a ran
 
 ### 2.1. Discrete and Continuous Probability Distributions
 
-| **Type** | **Distribution** | **Parameters** | **Description** | **Python Implementation** | **Distribution Shape** |
-|----------|------------------|----------------|-----------------|---------------------------|------------------------|
-| **Discrete** | **Bernoulli** | p (probability of success) | Single trial with two outcomes (success/failure) | `stats.bernoulli.pmf(k, p)` | [![Bernoulli](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/bernoulli.png)](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/bernoulli.png){:target="_blank"} |
-| **Discrete** | **Binomial** | n (trials), p (probability) | Number of successes in n independent Bernoulli trials | `stats.binom.pmf(k, n, p)` | [![Binomial](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/binomial.png)](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/binomial.png){:target="_blank"} |
-| **Discrete** | **Poisson** | λ (lambda, rate) | Number of events in fixed time/space interval | `stats.poisson.pmf(k, mu)` | [![Poisson](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/poisson.png)](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/poisson.png){:target="_blank"} |
-| **Discrete** | **Geometric** | p (probability of success) | Number of trials until first success | `stats.geom.pmf(k, p)` | [![Geometric](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/geometric.png)](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/geometric.png){:target="_blank"} |
-| **Continuous** | **Uniform** | a (min), b (max) | All values in interval [a, b] equally likely | `stats.uniform.pdf(x, a, b-a)` | [![Uniform](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/uniform.png)](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/uniform.png){:target="_blank"} |
-| **Continuous** | **Normal (Gaussian)** | μ (mean), σ (std dev) | Symmetric bell curve; most common distribution | `stats.norm.pdf(x, mu, sigma)` | [![Normal](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/normal.png)](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/normal.png){:target="_blank"} |
-| **Continuous** | **Exponential** | λ (rate) | Time between events in Poisson process | `stats.expon.pdf(x, scale=1/lambda)` | [![Exponential](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/exponential.png)](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/exponential.png){:target="_blank"} |
-| **Continuous** | **Gamma** | k (shape), θ (scale) | Generalizes exponential; sum of k exponential variables | `stats.gamma.pdf(x, k, scale=theta)` | [![Gamma](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/gamma.png)](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/gamma.png){:target="_blank"} |
-| **Continuous** | **Beta** | α (alpha), β (beta) | Distribution on interval [0, 1] | `stats.beta.pdf(x, alpha, beta)` | [![Beta](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/beta.png)](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/beta.png){:target="_blank"} |
-| **Continuous** | **Chi-Square (χ²)** | df (degrees of freedom) | Sum of squared standard normal variables | `stats.chi2.pdf(x, df)` | [![Chi-Square](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/chi_square.png)](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/chi_square.png){:target="_blank"} |
-| **Continuous** | **Student's t** | df (degrees of freedom) | Similar to normal but with heavier tails | `stats.t.pdf(x, df)` | [![t-Distribution](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/t_distribution.png)](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/t_distribution.png){:target="_blank"} |
-| **Continuous** | **F-Distribution** | df1, df2 (degrees of freedom) | Ratio of two chi-square distributions | `stats.f.pdf(x, df1, df2)` | [![F-Distribution](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/f_distribution.png)](https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/f_distribution.png){:target="_blank"} |
+<table>
+  <thead>
+    <tr>
+      <th><strong>Type</strong></th>
+      <th><strong>Distribution</strong></th>
+      <th><strong>Parameters</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>Python Implementation</strong></th>
+      <th><strong>Distribution Shape</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign base_url = "https://gperdrizet.github.io/FSA_devops/assets/distribution_plots/" %}
+    {% for type_group in site.data.statistics_tables.probability_distributions %}
+      {% for dist in type_group.distributions %}
+        <tr>
+          {% if forloop.first %}
+            <td rowspan="{{ type_group.distributions.size }}"><strong>{{ type_group.type }}</strong></td>
+          {% endif %}
+          <td><strong>{{ dist.name }}</strong></td>
+          <td>{{ dist.parameters }}</td>
+          <td>{{ dist.description }}</td>
+          <td>{{ dist.python }}</td>
+          <td><a href="{{ base_url }}{{ dist.image }}" target="_blank"><img src="{{ base_url }}{{ dist.image }}" alt="{{ dist.name }}"></a></td>
+        </tr>
+      {% endfor %}
+    {% endfor %}
+  </tbody>
+</table>
 
 ### 1.3. Key Properties by Distribution
 
@@ -214,20 +243,30 @@ Before conducting any statistical test, verify the following assumptions:
 
 ### 3.2. Hypothesis Testing by Scenario
 
-| **Situation** | **Independent Variable Type** | **Dependent Variable Type** | **Parametric Test** | **Non-Parametric Test** | **P-value Interpretation** |
-|---------------|-------------------------------|----------------------------|---------------------|-------------------------|----------------------------|
-| **Comparing one sample to a known value** | None (fixed value) | Continuous | One-sample T-test / Z-test | Wilcoxon signed-rank test | Low p-value: Sample mean significantly differs from known value |
-| **Comparing two independent groups** | Categorical (2 groups) | Continuous | Independent samples T-test / Two-sample Z-test | Mann-Whitney U test (Wilcoxon rank-sum test) | Low p-value: Significant difference between the two groups |
-| **Comparing two paired/dependent groups** | Categorical (2 conditions) | Continuous | Paired T-test | Wilcoxon signed-rank test | Low p-value: Significant change between paired observations |
-| **Comparing three or more independent groups** | Categorical (3+ groups) | Continuous | One-way ANOVA | Kruskal-Wallis H test | Low p-value: At least one group differs from the others |
-| **Comparing three or more paired/dependent groups** | Categorical (3+ conditions) | Continuous | Repeated measures ANOVA | Friedman test | Low p-value: Significant differences across repeated measurements |
-| **Testing relationship between two continuous variables** | Continuous | Continuous | Pearson correlation | Spearman rank correlation / Kendall's tau | Low p-value: Significant correlation exists between variables |
-| **Comparing distributions of categorical variables** | None (comparing to expected) | Categorical | Chi-square test | Fisher's exact test (for small samples) | Low p-value: Observed distribution differs from expected |
-| **Testing independence of two categorical variables** | Categorical | Categorical | Chi-square test of independence | Fisher's exact test | Low p-value: Variables are dependent (not independent) |
-| **Comparing variances between two groups** | Categorical (2 groups) | Continuous (variance) | F-test (Levene's test) | Levene's test / Fligner-Killeen test | Low p-value: Variances significantly differ between groups |
-| **Testing effects of two or more factors** | Categorical (2+ factors) | Continuous | Two-way ANOVA / Factorial ANOVA | Scheirer-Ray-Hare test | Low p-value: Significant main effects or interaction effects |
-| **Testing normality of data** | None (single sample) | Continuous | Shapiro-Wilk test | Kolmogorov-Smirnov test | Low p-value: Data significantly deviates from normal distribution |
-| **Comparing sample distribution to theoretical distribution** | None (comparing distributions) | Continuous | N/A | Kolmogorov-Smirnov test | Low p-value: Sample distribution differs from theoretical distribution |
+<table>
+  <thead>
+    <tr>
+      <th><strong>Situation</strong></th>
+      <th><strong>Independent Variable Type</strong></th>
+      <th><strong>Dependent Variable Type</strong></th>
+      <th><strong>Parametric Test</strong></th>
+      <th><strong>Non-Parametric Test</strong></th>
+      <th><strong>P-value Interpretation</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for test in site.data.statistics_tables.hypothesis_tests %}
+      <tr>
+        <td><strong>{{ test.situation }}</strong></td>
+        <td>{{ test.independent_var }}</td>
+        <td>{{ test.dependent_var }}</td>
+        <td>{{ test.parametric_test }}</td>
+        <td>{{ test.nonparametric_test }}</td>
+        <td>{{ test.p_value_interpretation }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
 ### 3.3. Multiple Testing Correction
 
