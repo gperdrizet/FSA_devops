@@ -6,8 +6,6 @@ nav_exclude: true
 
 ---
 
-## Setting up your Windows development environment
-
 This guide will walk you through installing and configuring Git, Python, and Visual Studio Code on Windows.
 
 ### 1. Installing Git for Windows

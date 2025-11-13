@@ -1,13 +1,9 @@
 ---
 layout: page
-title: Plotting
+title: Plotting Overview
 permalink: /resource_pages/plotting.html
 nav_exclude: true
 ---
-
-# Plotting Overview
-
-## Introduction
 
 Data visualization is essential for exploring, understanding, and communicating insights from data. This guide covers common plot types, their purposes, and when to use them.
 

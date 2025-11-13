@@ -5,6 +5,8 @@ permalink: /devops_pages/vocareum.html
 nav_exclude: true
 ---
 
+This guide will walk you through moving the contents of a Vocareum environment to and from Github.
+
 ### 1.1. Initialize an empty GitHub repository
 
 First, we need a repository to be the home for your Vocareum code on GitHub. From your GihHub profile page:
