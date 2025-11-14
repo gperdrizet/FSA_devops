@@ -23,8 +23,8 @@ Data visualization is essential for exploring, understanding, and communicating 
 4. [Additional Resources](#4-additional-resources)
    - [Python Visualization Libraries](#41-python-visualization-libraries)
    - [Recommended Reading](#42-recommended-reading)
-   - [Color Palettes](#43-color-palettes)
-
+   - [Python Plotting Resources](#43-python-plotting-resources)
+   - [Color Palettes](#44-color-palettes)
 
 ---
 
@@ -226,13 +226,14 @@ Data visualization is essential for exploring, understanding, and communicating 
 - <a href="https://clauswilke.com/dataviz/" target="_blank">**"Fundamentals of Data Visualization"**</a> by Claus O. Wilke
 - <a href="https://www.storytellingwithdata.com/" target="_blank">**"Storytelling with Data"**</a> by Cole Nussbaumer Knaflic
 
-### Online Tools
+### 4.3. Python Plotting Resources
+
 - <a href="https://colorbrewer2.org/" target="_blank">**ColorBrewer**</a>: Color schemes for maps and data visualization
 - <a href="https://seaborn.pydata.org/examples/index.html" target="_blank">**Seaborn Gallery**</a>: Examples of statistical plots
 - <a href="https://matplotlib.org/stable/gallery/index.html" target="_blank">**Matplotlib Gallery**</a>: Comprehensive plot examples
 - <a href="https://www.python-graph-gallery.com/" target="_blank">**Python Graph Gallery**</a>: Collection of plot types with code
 
-### 4.3. Color Palettes
+### 4.4. Color Palettes
 
 ```python
 # Colorblind-friendly palettes

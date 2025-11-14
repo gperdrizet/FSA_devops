@@ -15,8 +15,8 @@ Statistics is the foundation of data science, providing the mathematical framewo
    - [Important Notes](#14-important-notes)
 2. [Common Probability Distributions](#2-common-probability-distributions)
 3. [Statistical Test Selection Guide](#3-statistical-test-selection-guide)
-   - [Hypothesis Testing by Scenario](#31-hypothesis-testing-by-scenario)
-   - [Test Assumptions Checklist](#32-test-assumptions-checklist)
+   - [Test Assumptions Checklist](#31-test-assumptions-checklist)
+   - [Hypothesis Testing by Scenario](#32-hypothesis-testing-by-scenario)
    - [Multiple Testing Correction](#33-multiple-testing-correction)
 
 ---
