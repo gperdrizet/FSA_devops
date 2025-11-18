@@ -136,6 +136,11 @@ probability_distributions:
         description: "Ratio of two chi-square distributions"
         python: "<code>stats.f.pdf(x, df1, df2)</code>"
         image: "f_distribution.png"
+      - name: "Pareto"
+        parameters: "α (shape), xₘ (scale/minimum)"
+        description: "Power law distribution; models 80/20 rule phenomena"
+        python: "<code>stats.pareto.pdf(x, alpha, scale=xm)</code>"
+        image: "pareto.png"
 
 # Hypothesis Testing Table
 hypothesis_tests:
