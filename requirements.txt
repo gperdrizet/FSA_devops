@@ -4,5 +4,6 @@ numpy
 matplotlib
 pandas
 pywaffle
+scikit-learn
 scipy
 seaborn
