@@ -141,5 +141,7 @@ units:
         title: "Data Wrangling"
         topics: "Manipulating and cleaning data"
         notebooks:
+          - name: "In class demo"
+            file: "Lesson_15_demo.ipynb"
           - name: "Activity"
             file: "Lesson_15_activity.ipynb"
