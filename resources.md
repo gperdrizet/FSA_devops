@@ -9,6 +9,7 @@ permalink: /resources/
 1. [DevOps Guides Overview](https://gperdrizet.github.io/FSA_devops/devops_pages/overview.html)
 2. [Plotting Overview](https://gperdrizet.github.io/FSA_devops/resource_pages/plotting.html)
 2. [Statistics Overview](https://gperdrizet.github.io/FSA_devops/resource_pages/statistics.html)
+3. [Data Wrangling Overview](https://gperdrizet.github.io/FSA_devops/resource_pages/ata_wrangling.html)
 
 ---
 ## Cheat sheets & syntax reference
