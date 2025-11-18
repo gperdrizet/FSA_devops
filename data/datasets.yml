@@ -47,7 +47,7 @@ units:
         assignment: "Lesson 15 activity"
         datasets:
           - name: "Original California housing data"
-            file: "california_housing_data.csv"
+            file: "california_housing.csv"
           - name: "California housing data with missing values"
             file: "salted_housing_data.csv"
           - name: "Sales by date"
