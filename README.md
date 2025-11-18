@@ -4,7 +4,7 @@
 
 [GitHub Pages blog](https://gperdrizet.github.io/FSA_devops/) for updates, additional resources and how-to guides related to the Fullstack Academy AI/ML program, cohort 2510-FTB-CT-AIM-PT.
 
-## Overview
+## 1. Overview
 
 This repository powers a Jekyll-based GitHub Pages site that serves as a central hub for bootcamp materials, including:
 
@@ -16,7 +16,7 @@ This repository powers a Jekyll-based GitHub Pages site that serves as a central
 
 The project implements a data-driven architecture using YAML configuration files and Liquid templating to minimize maintenance overhead and enable rapid content updates.
 
-## Architecture
+## 2. Architecture
 
 ### Repository Structure
 
@@ -60,55 +60,37 @@ This approach reduces maintenance burden by significantly. Adding new content re
 
 **Custom Components**: The `_includes/header.html` file implements navigation filtering to exclude pages with `nav_exclude: true` in their front matter, enabling draft pages and hidden content.
 
-## CI/CD Pipeline
+## 2. CI/CD Pipeline
 
-### Dual-Workflow Strategy
+The main branch has protections in place that prevent direct pushes without a pull request. To merge a pull request into main, a test deployment must first be made successfully.
 
-The repository implements two GitHub Actions workflows for different deployment scenarios:
+### 1. Pull Request Preview (`test-gh-pages.yml`)
 
-#### 1. Production Deployment (`deploy-gh-pages.yml`)
+- **Trigger**: PR creation/reopening or manual dispatch
+- **Purpose**: Validates that site builds successfully before merging to `main`
+- **Process**: Identical build steps to production workflow but deploys to `github-pages-test` environment
 
-**Trigger**: Pushes to `main` branch or manual dispatch
+### 2. Production Deployment (`deploy-gh-pages.yml`)
 
-**Process**:
-1. **Checkout**: Clones repository with full history
-2. **Asset Staging**: Copies notebooks, datasets, and configuration files into the Jekyll source directory (`site/`)
-   - Notebooks → `site/assets/notebooks/`
-   - Datasets → `site/assets/data/`
-   - YAML configs → `site/_data/`
-   - Resources page → `site/`
-3. **Jekyll Build**: Compiles site using `actions/jekyll-build-pages@v1` with Minima theme
-4. **Artifact Upload**: Packages the `_site` directory for deployment
-5. **Deployment**: Publishes to GitHub Pages using `actions/deploy-pages@v4`
+- **Trigger**: Pushes to `main` branch or manual dispatch
+- **Process**:
+   1. **Checkout**: Clones repository with full history
+   2. **Asset Staging**: Copies notebooks, datasets, and configuration files into the Jekyll source directory (`site/`)
+      - Notebooks → `site/assets/notebooks/`
+      - Datasets → `site/assets/data/`
+      - YAML configs → `site/_data/`
+      - Resources page → `site/`
+   3. **Jekyll Build**: Compiles site using `actions/jekyll-build-pages@v1` with Minima theme
+   4. **Artifact Upload**: Packages the `_site` directory for deployment
+   5. **Deployment**: Publishes to GitHub Pages using `actions/deploy-pages@v4`
 
-**Permissions**: Requires `pages: write` and `id-token: write` for GitHub Pages deployment
-
-**Concurrency**: Prevents concurrent deployments to avoid conflicts (`cancel-in-progress: false` preserves in-flight builds)
-
-#### 2. Pull Request Preview (`test-gh-pages.yml`)
-
-**Trigger**: PR creation/reopening or manual dispatch
-
-**Purpose**: Validates that site builds successfully before merging to `main`
-
-**Process**: Identical build steps to production workflow but deploys to `github-pages-test` environment
-
-**Benefits**:
+### Benefits:
 - Catches Jekyll build errors early in the development cycle
 - Validates YAML syntax and Liquid template logic
 - Ensures asset copying and file structure integrity
 - Provides build status checks on PRs via badges
 
-### Build Optimization
-
-The workflows use specific versions of GitHub Actions:
-- `actions/checkout@v4`: Fast, secure repository cloning
-- `actions/configure-pages@v5`: Configures Pages settings and environment
-- `actions/jekyll-build-pages@v1`: Official Jekyll build action with theme support
-- `actions/upload-pages-artifact@v3`: Efficient artifact compression and upload
-- `actions/deploy-pages@v4`: Atomic deployment to GitHub Pages
-
-## Development Workflow
+## 3. Development Workflow
 
 ### Branch Strategy
 
@@ -145,11 +127,4 @@ cd site && bundle exec jekyll serve
 1. Create markdown file in `site/_posts/` using naming convention: `YYYY-MM-DD-title.md`
 2. Include YAML front matter with `layout`, `title`, `date`, and optional `categories`
 3. Jekyll automatically includes posts in chronological order on homepage
-
-### Quality Assurance
-
-- **Build status badges**: README displays real-time workflow status
-- **PR checks**: Test workflow must pass before merging
-- **Local testing**: Jekyll server provides immediate feedback during development
-- **Git LFS**: Large files (notebooks, datasets) tracked via LFS for efficient repository management
 
