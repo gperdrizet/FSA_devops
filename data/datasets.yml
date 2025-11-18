@@ -42,9 +42,9 @@ units:
           - name: "Synthetic online sales data"
             file: "online_sales.csv"
 
-      - number: "14"
-        title: "Probability distributions"
-        assignment: "Lesson 14 demo/activity"
+      - number: "15"
+        title: "Data Wrangling"
+        assignment: "Lesson 15 activity"
         datasets:
           - name: "California housing data with missing values"
             file: "salted_housing_data.csv"
