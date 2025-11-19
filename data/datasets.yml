@@ -55,4 +55,11 @@ units:
           - name: "Sale amounts"
             file: "sale_amounts.csv"
 
+      - number: "INC4"
+        title: "Incremental capstone 4"
+        assignment: "Data Visualization Techniques"
+        datasets:
+          - name: "Dirty NSMES 1988 patient data"
+            file: "NSMES1988_Dirty.csv"
+
           
