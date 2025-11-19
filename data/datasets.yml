@@ -55,6 +55,13 @@ units:
           - name: "Sale amounts"
             file: "sale_amounts.csv"
 
+      - number: "16"
+        title: "Feature Engineering"
+        assignment: "Lesson 16 activity"
+        datasets:
+          - name: "Synthetic environmental data"
+            file: "environmental_data.csv"
+
       - number: "INC4"
         title: "Incremental capstone 4"
         assignment: "Data Visualization Techniques"

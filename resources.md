@@ -10,6 +10,7 @@ permalink: /resources/
 2. [Plotting Overview](https://gperdrizet.github.io/FSA_devops/resource_pages/plotting.html)
 2. [Statistics Overview](https://gperdrizet.github.io/FSA_devops/resource_pages/statistics.html)
 3. [Data Wrangling Overview](https://gperdrizet.github.io/FSA_devops/resource_pages/data_wrangling.html)
+3. [Feature Engineering Overview](https://gperdrizet.github.io/FSA_devops/resource_pages/feature_engineering.html)
 
 ---
 ## Cheat sheets & syntax reference
