@@ -64,6 +64,7 @@ jobs:
   # Deployment job
   deploy:
     name: Test deploy pages site
+    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
     environment:
       name: github-pages-test
       url: ${{ steps.deployment.outputs.page_url }}
