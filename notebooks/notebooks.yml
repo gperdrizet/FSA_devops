@@ -145,3 +145,14 @@ units:
             file: "Lesson_15_demo.ipynb"
           - name: "Activity"
             file: "Lesson_15_activity.ipynb"
+          - name: "Activity solution"
+            file: "Lesson_15_activity_solution.ipynb"
+
+      - number: "16"
+        title: "Feature Engineering"
+        topics: "Creating and transforming features"
+        notebooks:
+          - name: "In class demo"
+            file: "Lesson_16_demo.ipynb"
+          - name: "Activity"
+            file: "Lesson_16_activity.ipynb"
