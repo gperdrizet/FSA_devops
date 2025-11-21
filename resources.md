@@ -6,20 +6,20 @@ permalink: /resources/
 
 ## How-to Guides & Instructions
 
-1. [DevOps Guides Overview](https://gperdrizet.github.io/FSA_devops/devops_pages/overview.html)
-2. [Plotting Overview](https://gperdrizet.github.io/FSA_devops/resource_pages/plotting.html)
-2. [Statistics Overview](https://gperdrizet.github.io/FSA_devops/resource_pages/statistics.html)
-3. [Data Wrangling Overview](https://gperdrizet.github.io/FSA_devops/resource_pages/data_wrangling.html)
-3. [Feature Engineering Overview](https://gperdrizet.github.io/FSA_devops/resource_pages/feature_engineering.html)
+1. [DevOps Guides Overview]({{ '/devops_pages/overview.html' | relative_url }})
+2. [Plotting Overview]({{ '/resource_pages/plotting.html' | relative_url }})
+2. [Statistics Overview]({{ '/resource_pages/statistics.html' | relative_url }})
+3. [Data Wrangling Overview]({{ '/resource_pages/data_wrangling.html' | relative_url }})
+3. [Feature Engineering Overview]({{ '/resource_pages/feature_engineering.html' | relative_url }})
 
 ---
 ## Cheat sheets & syntax reference
-1. <a href="https://gperdrizet.github.io/FSA_devops/assets/cheatsheets/jupyter_notebook_cheatsheet.pdf" target="_blank">Jupyter notebooks</a>
-2. <a href="https://gperdrizet.github.io/FSA_devops/assets/cheatsheets/vscode_cheatsheet_windows.pdf" target="_blank">VScode (Windows)</a>
-3. <a href="https://gperdrizet.github.io/FSA_devops/assets/cheatsheets/vscode_cheatsheet_macos.pdf" target="_blank">VScode (MacOs)</a>
-4. <a href="https://gperdrizet.github.io/FSA_devops/assets/cheatsheets/git_cheatsheet.pdf" target="_blank">Git</a>
-5. <a href="https://gperdrizet.github.io/FSA_devops/assets/cheatsheets/numpy_cheatsheet.pdf" target="_blank">NumPy</a>
-6. <a href="https://gperdrizet.github.io/FSA_devops/assets/cheatsheets/pandas_cheatsheet.pdf" target="_blank">Pandas</a>
+1. <a href="{{ '/assets/cheatsheets/jupyter_notebook_cheatsheet.pdf' | relative_url }}" target="_blank">Jupyter notebooks</a>
+2. <a href="{{ '/assets/cheatsheets/vscode_cheatsheet_windows.pdf' | relative_url }}" target="_blank">VScode (Windows)</a>
+3. <a href="{{ '/assets/cheatsheets/vscode_cheatsheet_macos.pdf' | relative_url }}" target="_blank">VScode (MacOs)</a>
+4. <a href="{{ '/assets/cheatsheets/git_cheatsheet.pdf' | relative_url }}" target="_blank">Git</a>
+5. <a href="{{ '/assets/cheatsheets/numpy_cheatsheet.pdf' | relative_url }}" target="_blank">NumPy</a>
+6. <a href="{{ '/assets/cheatsheets/pandas_cheatsheet.pdf' | relative_url }}" target="_blank">Pandas</a>
 
 ---
 ## Data science library information
@@ -75,4 +75,4 @@ permalink: /resources/
 
 ### Unit 2: applied data science with Python
 
-1. [Incremental capstone 1: import and clean data](https://gperdrizet.github.io/FSA_devops/assets/slides/Capstone_Session_1.pdf){:target="_blank"}
+1. [Incremental capstone 1: import and clean data]({{ '/assets/slides/Capstone_Session_1.pdf' | relative_url }}){:target="_blank"}

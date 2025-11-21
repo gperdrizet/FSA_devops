@@ -39,7 +39,7 @@ permalink: /notebooks/
                 {% endif %}
             </td>
             <td style="text-align: center;">
-                <a href="https://gperdrizet.github.io/FSA_devops/assets/notebooks/unit{{ unit.number }}/lesson_{{ lesson.number }}/{{ notebook.file }}" download>
+                <a href="{{ '/assets/notebooks/unit' | append: unit.number | append: '/lesson_' | append: lesson.number | append: '/' | append: notebook.file | relative_url }}" download>
                     <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
                 </a>
             </td>

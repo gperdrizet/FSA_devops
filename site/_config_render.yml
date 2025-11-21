@@ -1,0 +1,6 @@
+# Render.com specific configuration
+# This file overrides production settings for Render preview deployments
+# Render deploys at root level, so we need empty baseurl
+
+url: ""
+baseurl: ""

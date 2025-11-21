@@ -5,7 +5,7 @@ date: 2025-11-12
 categories: resources
 ---
 
-Added a comprehensive [Statistics Overview](https://gperdrizet.github.io/FSA_devops/resource_pages/statistics.html) for quick reference on descriptive statistics, probability distributions and statistical testing.
+Added a comprehensive [Statistics Overview]({{ '/resource_pages/statistics.html' | relative_url }}) for quick reference on descriptive statistics, probability distributions and statistical testing.
 
 ## What's Included
 
@@ -28,6 +28,6 @@ Navigate the complex world of hypothesis testing with comprehensive tables showi
 - **Interpretation guidelines** for understanding results
 - **Best practices** for avoiding common pitfalls
 
-This resource complements the existing [Plotting Overview](https://gperdrizet.github.io/FSA_devops/resource_pages/plotting.html) page and is designed to support your work in Units 2 and 3 of the course.
+This resource complements the existing [Plotting Overview]({{ '/resource_pages/plotting.html' | relative_url }}) page and is designed to support your work in Units 2 and 3 of the course.
 
 Happy analyzing!

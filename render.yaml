@@ -1,0 +1,19 @@
+# Render.com Blueprint for FSA_devops Preview Deployments
+# This file defines the infrastructure for automatic PR preview deployments
+
+services:
+  - type: web
+    name: fsa-devops-preview
+    env: static
+    branch: dev
+    buildCommand: cd site && bundle install && cd .. && make build-render
+    staticPublishPath: site/_site
+    pullRequestPreviewsEnabled: true
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=3600
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
