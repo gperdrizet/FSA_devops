@@ -46,13 +46,12 @@ jobs:
         with:
           script: |
             const prNumber = context.issue.number;
-            const message = `🚀 **Build successful!**
+            const message = `**Build successful!**
             
-            Your preview deployment will be available on Render at:
-            \`fsa-devops-preview-pr-${prNumber}.onrender.com\`
+            Preview deployment will be available on Render at:
+            `[fsa-devops-preview-pr-${prNumber}.onrender.com](https://fsa-devops-preview-pr-${prNumber}.onrender.com)`
             
-            Note: Render preview deployments may take a few minutes to become available after the build completes.
-            Check the [Render dashboard](https://dashboard.render.com) for deployment status.`;
+            Note: Render preview deployments may take a few minutes to become available after the build completes.`;
             
             github.rest.issues.createComment({
               issue_number: prNumber,
