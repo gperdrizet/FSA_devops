@@ -4,3 +4,6 @@
 
 url: ""
 baseurl: ""
+
+# Use dev branch for GitHub links since we're previewing unreleased content
+github_branch: "dev"

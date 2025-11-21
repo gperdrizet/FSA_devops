@@ -33,7 +33,7 @@ permalink: /datasets/
                     <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
                 </a>
                 {% else %}
-                <a href="https://github.com/gperdrizet/FSA_devops/blob/main/data/unit{{ unit.number }}/{{ dataset.file }}" target="_blank">
+                <a href="https://github.com/gperdrizet/FSA_devops/blob/{{ site.github_branch }}/data/unit{{ unit.number }}/{{ dataset.file }}" target="_blank">
                     <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/brands/github.svg" width="15" height="15">
                 </a>
                 {% endif %}

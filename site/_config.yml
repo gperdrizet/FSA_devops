@@ -31,6 +31,10 @@ remote_theme: "jekyll/minima@1e8a445"
 
 baseurl: "/FSA_devops" # the subpath of your site, e.g. /blog
 url: "https://gperdrizet.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Default to main branch for GitHub links (production)
+github_branch: "main"
+
 # twitter_username: jekyllrb
 # github_username:  gperdrizet
 plugins:
