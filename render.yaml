@@ -7,7 +7,7 @@ services:
     env: static
     branch: dev
     buildCommand: cd site && bundle install && cd .. && make build-render
-    staticPublishPath: site/_site
+    staticPublishPath: ./site/_site
     pullRequestPreviewsEnabled: true
     headers:
       - path: /*
