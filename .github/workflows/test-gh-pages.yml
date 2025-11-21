@@ -48,8 +48,8 @@ jobs:
             const prNumber = context.issue.number;
             const message = `**Build successful!**
             
-            Preview deployment will be available on Render at:
-            `[fsa-devops-preview-pr-${prNumber}.onrender.com](https://fsa-devops-preview-pr-${prNumber}.onrender.com)`
+            Your preview deployment will be available on Render at:
+            https://fsa-devops-preview-pr-${prNumber}.onrender.com
             
             Note: Render preview deployments may take a few minutes to become available after the build completes.`;
             
@@ -58,4 +58,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: message
+            });
             });
