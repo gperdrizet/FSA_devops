@@ -159,12 +159,12 @@ units:
 
       - number: "Unit2_Competition"
         title: "Unit 2 Competition"
-        topics: "Become Obsesive about a r2"
+        topics: "Become Obsessive about a r2"
         notebooks:
           - name: "AndrewT - (0.29638)"
             file: "AndrewT_Clipping_FeatureScaling_PolynomialFeatures_GeoHashing_LASSO.ipynb"
 
-- name: "Unit 3: Machine learning"
+  - name: "Unit 3: Machine learning"
     number: 3
     lessons:
       - number: "19"
