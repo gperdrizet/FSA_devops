@@ -75,7 +75,10 @@ units:
         datasets:
           - name: "Dirty NSMES 1988 patient data"
             file: "NSMES1988_Dirty.csv"
-  
+
+  - name: "Unit 3: Machine learning"
+    number: 3
+    lessons:
       - number: "19"
         title: "Supervised learning regression"
         assignment: "Lesson 19 demo"
