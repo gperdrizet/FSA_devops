@@ -163,3 +163,15 @@ units:
         notebooks:
           - name: "AndrewT - (0.29638)"
             file: "AndrewT_Clipping_FeatureScaling_PolynomialFeatures_GeoHashing_LASSO.ipynb"
+
+- name: "Unit 3: Machine learning"
+    number: 3
+    lessons:
+      - number: "19"
+        title: "Supervised learning regression"
+        topics: "Regression models: types, training, evaluation, regularization"
+        notebooks:
+          - name: "In-class demo"
+            file: "Lesson_19_demo.ipynb"
+          - name: "Activity"
+            file: "Lesson_19_activity.ipynb"

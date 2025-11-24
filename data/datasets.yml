@@ -75,5 +75,12 @@ units:
         datasets:
           - name: "Dirty NSMES 1988 patient data"
             file: "NSMES1988_Dirty.csv"
-
-          
+  
+      - number: "19"
+        title: "Supervised learning regression"
+        assignment: "Lesson 19 demo"
+        datasets:
+          - name: "Diameters and circumferences of circular objects"
+            file: "diameter_circumference.csv"
+          - name: "Distance-to-water data"
+            file: "distance_to_water.csv"
