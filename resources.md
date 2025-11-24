@@ -10,7 +10,8 @@ permalink: /resources/
 2. [Plotting Overview]({{ '/resource_pages/plotting.html' | relative_url }})
 2. [Statistics Overview]({{ '/resource_pages/statistics.html' | relative_url }})
 3. [Data Wrangling Overview]({{ '/resource_pages/data_wrangling.html' | relative_url }})
-3. [Feature Engineering Overview]({{ '/resource_pages/feature_engineering.html' | relative_url }})
+4. [Feature Engineering Overview]({{ '/resource_pages/feature_engineering.html' | relative_url }})
+4. [Regression Overview]({{ '/resource_pages/regression.html' | relative_url }})
 
 ---
 ## Cheat sheets & syntax reference
