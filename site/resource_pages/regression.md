@@ -18,8 +18,8 @@ Regression models predict continuous target variables by learning relationships 
    - [Metric comparison](#41-metric-comparison)
    - [When to use each metric](#42-when-to-use-each-metric)
 5. [Core regression techniques](#5-core-regression-techniques)
-   - [Regularization methods](#51-regularization-methods)
-   - [Cross-validation](#52-cross-validation)
+   - [Cross-validation](#51-cross-validation)
+   - [Regularization methods](#52-regularization-methods)
    - [Hyperparameter tuning](#53-hyperparameter-tuning)
 
 ---
@@ -85,14 +85,14 @@ Regression models predict continuous target variables by learning relationships 
 ```
 1. Data Loading & Inspection
    ↓
-2. Exploratory Data Analysis
+2. Train-Test Split
    ↓
-3. Data Preprocessing
+3. Exploratory Data Analysis
+   ↓
+4. Data Preprocessing
    - Handle missing values
    - Encode categorical variables
    - Scale numerical features
-   ↓
-4. Train-Test Split
    ↓
 5. Model Selection & Training
    - Linear regression
@@ -113,90 +113,27 @@ Regression models predict continuous target variables by learning relationships 
 
 ## 3. Model selection guide
 
-### 3.1. Regression-specific scenarios
-
-| **Scenario** | **Recommended Model** | **Reason** |
-|--------------|----------------------|------------|
-| **Simple linear relationship** | Linear Regression | Direct, interpretable, fast |
-| **Non-linear patterns** | Feature engineering + Regularization | Create polynomial/interaction features |
-| **Many features, some irrelevant** | Lasso (L1) | Automatic feature selection |
-| **Multicollinearity** | Ridge (L2) | Handles correlated predictors |
-| **Both issues** | ElasticNet | Combines L1 and L2 benefits |
-| **Small dataset** | LOOCV or K-Fold | Maximizes training data usage |
-| **Large dataset** | K-Fold with holdout | Balance accuracy and computation |
-
-### 3.2. Common supervised learning algorithms
-
 | **Algorithm** | **Data Considerations** | **Regularization** | **Strengths** | **Weaknesses** |
 |---------------|-------------------------|-------------------|---------------|----------------|
-| **Linear Regression** | Remove or handle outliers; check for multicollinearity (VIF); may need feature scaling for regularized versions | Lasso (L1), Ridge (L2), ElasticNet | Simple, fast, interpretable; works well with linear relationships; provides feature importance via coefficients | Assumes linearity; sensitive to outliers; poor with non-linear patterns; affected by multicollinearity |
-| **K-Nearest Neighbors** | Feature scaling required (StandardScaler, MinMaxScaler); remove irrelevant features; handle missing values | None (non-parametric) | No training phase; simple concept; naturally handles multi-class; non-parametric (no assumptions) | Slow predictions; memory intensive; sensitive to feature scaling; struggles with high dimensions (curse of dimensionality) |
-| **Decision Trees** | Minimal preprocessing needed; handles missing values; no scaling required; can handle mixed data types | Pruning (max_depth, min_samples_split, min_samples_leaf) | Interpretable; handles non-linear relationships; no feature scaling needed; captures interactions | Prone to overfitting; unstable (small data changes cause big tree changes); biased toward features with more levels |
-| **Support Vector Machines** | Feature scaling critical (StandardScaler); remove outliers; ensure balanced classes for classification | C parameter (controls margin), kernel parameters | Effective in high dimensions; memory efficient; works well with clear margins; robust to outliers (with proper kernel) | Slow with large datasets; sensitive to kernel choice; requires feature scaling; difficult to interpret |
-| **Neural Networks** | Feature scaling required; handle missing values; may need normalization; consider data augmentation for small datasets | L1, L2, Dropout, Early stopping, Batch normalization | Highly flexible; captures complex non-linear patterns; scales well with large data; automatic feature learning | Computationally expensive; requires large datasets; black box (hard to interpret); sensitive to hyperparameters; prone to overfitting |
+| <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html" target="_blank">**Linear Regression**</a> | Remove or handle outliers; check for multicollinearity (VIF); may need feature scaling for regularized versions | Lasso (L1), Ridge (L2), ElasticNet | Simple, fast, interpretable; works well with linear relationships; provides feature importance via coefficients | Assumes linearity; sensitive to outliers; poor with non-linear patterns; affected by multicollinearity |
+| <a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html" target="_blank">**K-Nearest Neighbors**</a> | Feature scaling required (StandardScaler, MinMaxScaler); remove irrelevant features; handle missing values | None (non-parametric) | No training phase; simple concept; naturally handles multi-class; non-parametric (no assumptions) | Slow predictions; memory intensive; sensitive to feature scaling; struggles with high dimensions (curse of dimensionality) |
+| <a href="https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html" target="_blank">**Decision Trees**</a> | Minimal preprocessing needed; handles missing values; no scaling required; can handle mixed data types | Pruning (max_depth, min_samples_split, min_samples_leaf) | Interpretable; handles non-linear relationships; no feature scaling needed; captures interactions | Prone to overfitting; unstable (small data changes cause big tree changes); biased toward features with more levels |
+| <a href="https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html" target="_blank">**Support Vector Machines**</a> | Feature scaling critical (StandardScaler); remove outliers; ensure balanced classes for classification | C parameter (controls margin), kernel parameters | Effective in high dimensions; memory efficient; works well with clear margins; robust to outliers (with proper kernel) | Slow with large datasets; sensitive to kernel choice; requires feature scaling; difficult to interpret |
+| <a href="https://scikit-learn.org/stable/modules/neural_networks_supervised.html" target="_blank">**Neural Networks**</a> | Feature scaling required; handle missing values; may need normalization; consider data augmentation for small datasets | L1, L2, Dropout, Early stopping, Batch normalization | Highly flexible; captures complex non-linear patterns; scales well with large data; automatic feature learning | Computationally expensive; requires large datasets; black box (hard to interpret); sensitive to hyperparameters; prone to overfitting |
 
 ---
 
 ## 4. Performance metrics
 
-### 4.1. Metric comparison
+Performace metrics quantify the difference between model predictions and true values of the label. When using for training a metric is refered to as the 'loss'.
 
-<table>
-  <thead>
-    <tr>
-      <th><strong>Metric</strong></th>
-      <th><strong>Formula</strong></th>
-      <th><strong>Units</strong></th>
-      <th><strong>Outlier Sensitivity</strong></th>
-      <th><strong>Best For</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>RSS</strong></td>
-      <td>$$\sum(y_i - \hat{y}_i)^2$$</td>
-      <td>Squared</td>
-      <td>High</td>
-      <td>OLS optimization</td>
-    </tr>
-    <tr>
-      <td><strong>MSE</strong></td>
-      <td>$$\frac{1}{n}\sum(y_i - \hat{y}_i)^2$$</td>
-      <td>Squared</td>
-      <td>High</td>
-      <td>Penalizing large errors</td>
-    </tr>
-    <tr>
-      <td><strong>RMSE</strong></td>
-      <td>$$\sqrt{\text{MSE}}$$</td>
-      <td>Same as y</td>
-      <td>High</td>
-      <td>Interpretable magnitude</td>
-    </tr>
-    <tr>
-      <td><strong>MAE</strong></td>
-      <td>$$\frac{1}{n}\sum|y_i - \hat{y}_i|$$</td>
-      <td>Same as y</td>
-      <td>Low</td>
-      <td>Robust to outliers</td>
-    </tr>
-    <tr>
-      <td><strong>R²</strong></td>
-      <td>$$1 - \frac{\text{SS}_{\text{res}}}{\text{SS}_{\text{tot}}}$$</td>
-      <td>0 to 1</td>
-      <td>Moderate</td>
-      <td>Variance explained</td>
-    </tr>
-  </tbody>
-</table>
-
-### 4.2. When to use each metric
-
-- **RSS**: Internal optimization for sklearn's `LinearRegression`
-- **MSE**: Standard metric, emphasizes larger errors
-- **RMSE**: Same units as target, easier to interpret than MSE
-- **MAE**: When outliers are legitimate data points
-- **R²**: Understanding model explanatory power (0 = no explanation, 1 = perfect)
+| **Metric** | **Formula** | **Units** | **Outlier Sensitivity** | **Best For** |
+|------------|-------------|-----------|-------------------------|--------------|
+| **RSS** | $\sum(y_i - \hat{y}_i)^2$ | Squared | Highest | OLS optimization |
+| <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html" target="_blank">**MSE**</a> | $\frac{1}{n}\sum(y_i - \hat{y}_i)^2$ | Squared | Higher | Higher penalty for larger errors |
+| <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html" target="_blank">**RMSE**</a> | $\sqrt{\text{MSE}}$ | Same as y | High | Interpretable magnitude, penalizes large errors less than MSE, but more then MAE |
+| <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html" target="_blank">**MAE**</a> | $\frac{1}{n}\sum\|y_i - \hat{y}_i\|$ | Same as y | Low | Robust to outliers |
+| <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html" target="_blank">**R²**</a> | $1 - \frac{\text{SS}\_\{\text{res}\}}{\text{SS}\_\{\text{tot}\}}$ | 0 to 1 | Moderate | Variance explained |
 
 **Best practice**: Report multiple metrics for comprehensive evaluation
 
@@ -204,9 +141,23 @@ Regression models predict continuous target variables by learning relationships 
 
 ## 5. Core regression techniques
 
-These techniques are crucial for successful regression modeling with any algorithm. Proper application of regularization, cross-validation, and hyperparameter tuning significantly improves model performance and generalization across all regression methods.
+These techniques are crucial for successful regression modeling with any algorithm. Proper application of cross-validation, regularization, and hyperparameter tuning significantly improves model performance and generalization across all regression methods.
 
-### 5.1. Regularization methods
+### 5.1. Cross-validation
+
+Trains and evaluates model on multiple train-validation splits called 'folds' to estimate generalization performance without overusing the test set.
+
+**Cross-validation functions:**
+- <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html" target="_blank">`cross_val_score()`</a>: Returns array of scores for each fold
+- <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html" target="_blank">`cross_validate()`</a>: Returns dict with scores, folds, fit times, etc for each fold
+
+**Cross-validation fold generators**:
+- <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html" target="_blank">**K-Fold**</a>: k equal folds, each used once for validation
+- <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.LeaveOneOut.html" target="_blank">**Leave-One-Out (LOOCV)**</a>: k = n (very computationally expensive)
+- <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RepeatedKFold.html" target="_blank">**Repeated K-Fold**</a>: Multiple K-Fold runs with different splits
+- <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html" target="_blank">**Time Series Split**</a>: Preserves temporal order
+
+### 5.2. Regularization methods
 
 Add penalty terms to prevent overfitting and handle multicollinearity.
 
@@ -223,21 +174,21 @@ Add penalty terms to prevent overfitting and handle multicollinearity.
   <tbody>
     <tr>
       <td><strong>Lasso (L1)</strong></td>
-      <td>$$\alpha \sum|\beta_j|$$</td>
+      <td>\(\alpha \sum|\beta_j|\)</td>
       <td>Yes (sets coefficients to 0)</td>
       <td>Sparse models, irrelevant features</td>
       <td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html" target="_blank"><code>Lasso(alpha=1.0)</code></a></td>
     </tr>
     <tr>
       <td><strong>Ridge (L2)</strong></td>
-      <td>$$\alpha \sum \beta_j^2$$</td>
+      <td>\(\alpha \sum \beta_j^2\)</td>
       <td>No (shrinks but keeps all)</td>
       <td>Multicollinearity, all features relevant</td>
       <td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html" target="_blank"><code>Ridge(alpha=1.0)</code></a></td>
     </tr>
     <tr>
       <td><strong>ElasticNet</strong></td>
-      <td>$$\lambda_1 \sum|\beta_j| + \lambda_2 \sum \beta_j^2$$</td>
+      <td>\(\lambda_1 \sum|\beta_j| + \lambda_2 \sum \beta_j^2\)</td>
       <td>Partial (some set to 0)</td>
       <td>Both multicollinearity and sparse features</td>
       <td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNet.html" target="_blank"><code>ElasticNet(alpha=1.0, l1_ratio=0.5)</code></a></td>
@@ -250,44 +201,6 @@ Add penalty terms to prevent overfitting and handle multicollinearity.
   - Higher α → stronger penalty → simpler model
   - Lower α → weaker penalty → more complex model
   - Use cross-validation to find optimal value
-
-**Example with cross-validation**:
-```python
-from sklearn.linear_model import RidgeCV
-
-# Automatic alpha selection via cross-validation
-model = RidgeCV(alphas=np.logspace(-2, 2, 100), cv=10)
-model.fit(X_train, y_train)
-print(f"Best alpha: {model.alpha_}")
-```
-
-### 5.2. Cross-validation
-
-Evaluates model on multiple train-validation splits to estimate generalization performance.
-
-**Common techniques**:
-- **K-Fold**: k equal folds, each used once for validation
-- **Stratified K-Fold**: Maintains class proportions (classification)
-- **Leave-One-Out (LOOCV)**: k = n (very computationally expensive)
-- **Repeated K-Fold**: Multiple K-Fold runs with different splits
-- **Time Series Split**: Preserves temporal order
-
-**Implementation**:
-```python
-from sklearn.model_selection import cross_val_score, KFold
-
-# K-Fold cross-validation
-kfold = KFold(n_splits=10, shuffle=True, random_state=42)
-scores = cross_val_score(
-    model, X_train, y_train, 
-    cv=kfold, 
-    scoring='r2'
-)
-
-print(f"Mean R²: {scores.mean():.3f} (+/- {scores.std():.3f})")
-```
-
-**Sklearn tools**: `KFold`, `StratifiedKFold`, `LeaveOneOut`, `RepeatedKFold`, `TimeSeriesSplit`, `cross_val_score()`, `cross_validate()`
 
 ### 5.3. Hyperparameter tuning
 
@@ -321,42 +234,21 @@ Systematically searches for optimal model parameters.
   </tbody>
 </table>
 
-**Example**:
-```python
-from sklearn.model_selection import GridSearchCV
-from sklearn.linear_model import Ridge
-
-# Define parameter grid
-param_grid = {'alpha': np.logspace(-2, 2, 50)}
-
-# Grid search with cross-validation
-grid_search = GridSearchCV(
-    Ridge(), 
-    param_grid, 
-    cv=5, 
-    scoring='neg_mean_squared_error'
-)
-grid_search.fit(X_train, y_train)
-
-print(f"Best alpha: {grid_search.best_params_['alpha']}")
-print(f"Best score: {-grid_search.best_score_:.3f}")
-```
-
 ---
 
 ## Additional resources
 
 ### Python libraries
 
-- **[scikit-learn](https://scikit-learn.org/)**: Comprehensive ML library
-  - `linear_model`: LinearRegression, Lasso, Ridge, ElasticNet
-  - `model_selection`: train_test_split, cross_val_score, GridSearchCV
-  - `metrics`: mean_squared_error, mean_absolute_error, r2_score
-  - `pipeline`: Pipeline, ColumnTransformer
-  - `preprocessing`: StandardScaler, MinMaxScaler
-- **[pandas](https://pandas.pydata.org/)**: Data manipulation
-- **[numpy](https://numpy.org/)**: Numerical operations
-- **[matplotlib](https://matplotlib.org/)** / **[seaborn](https://seaborn.pydata.org/)**: Visualization
+- **[scikit-learn](https://scikit-learn.org)**: Comprehensive ML library
+  - [`linear_model`](https://scikit-learn.org/stable/modules/linear_model.html): LinearRegression, Lasso, Ridge, ElasticNet
+  - [`model_selection`](https://scikit-learn.org/stable/api/sklearn.model_selection.html): train_test_split, cross_val_score, GridSearchCV
+  - [`metrics`](https://scikit-learn.org/stable/modules/model_evaluation.html): mean_squared_error, mean_absolute_error, r2_score
+  - [`pipeline`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html): Pipeline, ColumnTransformer
+- **[scipy](https://scipy.org/)**: Scientific computing library
+  - [`stats`](https://docs.scipy.org/doc/scipy/reference/stats.html): Statistical functions, distributions, hypothesis tests
+  - [`optimize`](https://docs.scipy.org/doc/scipy/reference/optimize.html): Optimization algorithms for parameter estimation
+  - [`linalg`](https://docs.scipy.org/doc/scipy/reference/linalg.html): Linear algebra operations for matrix computations
 
 ### Key sklearn modules
 
