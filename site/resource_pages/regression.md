@@ -85,14 +85,14 @@ Regression models predict continuous target variables by learning relationships 
 ```
 1. Data Loading & Inspection
    ↓
-2. Exploratory Data Analysis
+2. Train-Test Split
    ↓
-3. Data Preprocessing
+3. Exploratory Data Analysis
+   ↓
+4. Data Preprocessing
    - Handle missing values
    - Encode categorical variables
    - Scale numerical features
-   ↓
-4. Train-Test Split
    ↓
 5. Model Selection & Training
    - Linear regression
@@ -133,6 +133,7 @@ Regression models predict continuous target variables by learning relationships 
 | **K-Nearest Neighbors** | Feature scaling required (StandardScaler, MinMaxScaler); remove irrelevant features; handle missing values | None (non-parametric) | No training phase; simple concept; naturally handles multi-class; non-parametric (no assumptions) | Slow predictions; memory intensive; sensitive to feature scaling; struggles with high dimensions (curse of dimensionality) |
 | **Decision Trees** | Minimal preprocessing needed; handles missing values; no scaling required; can handle mixed data types | Pruning (max_depth, min_samples_split, min_samples_leaf) | Interpretable; handles non-linear relationships; no feature scaling needed; captures interactions | Prone to overfitting; unstable (small data changes cause big tree changes); biased toward features with more levels |
 | **Support Vector Machines** | Feature scaling critical (StandardScaler); remove outliers; ensure balanced classes for classification | C parameter (controls margin), kernel parameters | Effective in high dimensions; memory efficient; works well with clear margins; robust to outliers (with proper kernel) | Slow with large datasets; sensitive to kernel choice; requires feature scaling; difficult to interpret |
+| **Naive Bayes** | Handle missing values; works with categorical and continuous features; no scaling required; assumes feature independence | Smoothing parameter (alpha/Laplace smoothing) | Very fast training and prediction; works well with small datasets; handles high dimensions well; probabilistic output | Assumes feature independence (rarely true); sensitive to feature correlation; poor with complex feature interactions |
 | **Neural Networks** | Feature scaling required; handle missing values; may need normalization; consider data augmentation for small datasets | L1, L2, Dropout, Early stopping, Batch normalization | Highly flexible; captures complex non-linear patterns; scales well with large data; automatic feature learning | Computationally expensive; requires large datasets; black box (hard to interpret); sensitive to hyperparameters; prone to overfitting |
 
 ---
@@ -141,54 +142,13 @@ Regression models predict continuous target variables by learning relationships 
 
 ### 4.1. Metric comparison
 
-<table>
-  <thead>
-    <tr>
-      <th><strong>Metric</strong></th>
-      <th><strong>Formula</strong></th>
-      <th><strong>Units</strong></th>
-      <th><strong>Outlier Sensitivity</strong></th>
-      <th><strong>Best For</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>RSS</strong></td>
-      <td>$$\sum(y_i - \hat{y}_i)^2$$</td>
-      <td>Squared</td>
-      <td>High</td>
-      <td>OLS optimization</td>
-    </tr>
-    <tr>
-      <td><strong>MSE</strong></td>
-      <td>$$\frac{1}{n}\sum(y_i - \hat{y}_i)^2$$</td>
-      <td>Squared</td>
-      <td>High</td>
-      <td>Penalizing large errors</td>
-    </tr>
-    <tr>
-      <td><strong>RMSE</strong></td>
-      <td>$$\sqrt{\text{MSE}}$$</td>
-      <td>Same as y</td>
-      <td>High</td>
-      <td>Interpretable magnitude</td>
-    </tr>
-    <tr>
-      <td><strong>MAE</strong></td>
-      <td>$$\frac{1}{n}\sum|y_i - \hat{y}_i|$$</td>
-      <td>Same as y</td>
-      <td>Low</td>
-      <td>Robust to outliers</td>
-    </tr>
-    <tr>
-      <td><strong>R²</strong></td>
-      <td>$$1 - \frac{\text{SS}_{\text{res}}}{\text{SS}_{\text{tot}}}$$</td>
-      <td>0 to 1</td>
-      <td>Moderate</td>
-      <td>Variance explained</td>
-    </tr>
-  </tbody>
-</table>
+| **Metric** | **Formula** | **Units** | **Outlier Sensitivity** | **Best For** |
+|------------|-------------|-----------|-------------------------|--------------|
+| **RSS** | $\sum(y_i - \hat{y}_i)^2$ | Squared | High | OLS optimization |
+| **MSE** | $\frac{1}{n}\sum(y_i - \hat{y}_i)^2$ | Squared | High | Penalizing large errors |
+| **RMSE** | $\sqrt{\text{MSE}}$ | Same as y | High | Interpretable magnitude |
+| **MAE** | $\frac{1}{n}\sum\|y_i - \hat{y}_i\|$ | Same as y | Low | Robust to outliers |
+| **R²** | $1 - \frac{\text{SS}_{\text{res}}}{\text{SS}_{\text{tot}}}$ | 0 to 1 | Moderate | Variance explained |
 
 ### 4.2. When to use each metric
 
@@ -223,21 +183,21 @@ Add penalty terms to prevent overfitting and handle multicollinearity.
   <tbody>
     <tr>
       <td><strong>Lasso (L1)</strong></td>
-      <td>$$\alpha \sum|\beta_j|$$</td>
+      <td>\(\alpha \sum|\beta_j|\)</td>
       <td>Yes (sets coefficients to 0)</td>
       <td>Sparse models, irrelevant features</td>
       <td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html" target="_blank"><code>Lasso(alpha=1.0)</code></a></td>
     </tr>
     <tr>
       <td><strong>Ridge (L2)</strong></td>
-      <td>$$\alpha \sum \beta_j^2$$</td>
+      <td>\(\alpha \sum \beta_j^2\)</td>
       <td>No (shrinks but keeps all)</td>
       <td>Multicollinearity, all features relevant</td>
       <td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html" target="_blank"><code>Ridge(alpha=1.0)</code></a></td>
     </tr>
     <tr>
       <td><strong>ElasticNet</strong></td>
-      <td>$$\lambda_1 \sum|\beta_j| + \lambda_2 \sum \beta_j^2$$</td>
+      <td>\(\lambda_1 \sum|\beta_j| + \lambda_2 \sum \beta_j^2\)</td>
       <td>Partial (some set to 0)</td>
       <td>Both multicollinearity and sparse features</td>
       <td><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNet.html" target="_blank"><code>ElasticNet(alpha=1.0, l1_ratio=0.5)</code></a></td>
