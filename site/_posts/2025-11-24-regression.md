@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Lesson 19: regression materials"
-date: 2025-11-17
+date: 2025-11-24
 categories: resources
 ---
 
