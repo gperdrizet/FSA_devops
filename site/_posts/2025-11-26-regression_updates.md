@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Lesson 19: updated demo"
-date: 2025-11-17
+date: 2025-11-26
 categories: resources
 ---
 
