@@ -175,3 +175,5 @@ units:
             file: "Lesson_19_demo.ipynb"
           - name: "Activity"
             file: "Lesson_19_activity.ipynb"
+          - name: "Activity solution"
+            file: "Lesson_19_activity_solution.ipynb"
