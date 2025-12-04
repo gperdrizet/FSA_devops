@@ -52,7 +52,7 @@
 	"onCreateCommand": "sudo apt update && sudo apt upgrade -y && sudo apt install -y git-lfs && pip3 install --upgrade pip && pip3 install --user -r requirements.txt",
 
 	// Use 'postCreateCommand' to run commands once after the container is created
-	"postCreateCommand": "bundle install",
+	"postCreateCommand": "bundle install && git lfs install",
 
 	// Use 'postAttachCommand' to run commands each time a user connects to the container
 	"postAttachCommand": "cd site && bundle exec jekyll serve"
