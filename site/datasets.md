@@ -39,7 +39,7 @@ permalink: /datasets/
                 {% endif %}
             </td>
             <td style="text-align: center;">
-                <a href="{{ '/assets/data/unit' | append: unit.number | append: '/' | append: dataset.file | relative_url }}" download>
+                <a href="https://github.com/gperdrizet/FSA_devops/raw/{{ site.github_branch }}/data/unit{{ unit.number }}/{{ dataset.file }}" download>
                     <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/refs/heads/6.x/svgs/solid/download.svg" width="15" height="15">
                 </a>
             </td>
