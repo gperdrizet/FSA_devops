@@ -18,6 +18,27 @@ The project implements a data-driven architecture using YAML configuration files
 
 ## 2. Architecture
 
+### Git LFS Configuration
+
+This repository uses [Git Large File Storage (LFS)](https://git-lfs.github.com/) to efficiently manage large binary files. The following file types are automatically tracked with Git LFS:
+
+- **CSV files** (`*.csv`) - Dataset files in the `data/` directory
+- **Pickle files** (`*.pkl`) - Serialized Python objects
+- **Parquet files** (`*.parquet`) - Columnar data files
+- **PDF files** (`*.pdf`) - Documentation and resources
+
+Git LFS is automatically installed in the dev container during build. When cloning this repository, ensure you have Git LFS installed:
+
+```bash
+# Install Git LFS (if not already installed)
+git lfs install
+
+# Clone repository (LFS files are automatically downloaded)
+git clone https://github.com/gperdrizet/FSA_devops.git
+```
+
+GitHub Pages automatically resolves LFS pointers, so dataset download links work seamlessly for end users without any special configuration.
+
 ### Repository Structure
 
 ```
