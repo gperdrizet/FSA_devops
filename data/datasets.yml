@@ -89,3 +89,5 @@ units:
             file: "distance_to_water.csv"
           - name: "Preprocessed distance-to-water data"
             file: "distance_to_water_preprocessed.csv"
+          - name: "Florida Bike Rentals"
+            file: "FloridaBikeRentals.csv"
