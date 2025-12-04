@@ -33,7 +33,7 @@
 				"/usr/bin/python3.11",
 				"/usr/local/bin/python3"
 			],
-			"remote.restoreForwardedPorts": false,
+			"remote.restoreForwardedPorts": false
 			// "remote.autoForwardPorts": false
 		},
 
