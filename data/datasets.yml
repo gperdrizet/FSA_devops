@@ -90,7 +90,6 @@ units:
           - name: "Preprocessed distance-to-water data"
             file: "distance_to_water_preprocessed.csv"
 
-
       - number: "INC5"
         title: "Incremental capstone 5"
         assignment: "Florida Bike Rentals"
