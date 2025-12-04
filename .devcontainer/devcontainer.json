@@ -55,5 +55,5 @@
 	"postCreateCommand": "bundle install && git lfs install",
 
 	// Use 'postAttachCommand' to run commands each time a user connects to the container
-	"postAttachCommand": "cd site && bundle exec jekyll serve"
+	"postAttachCommand": "cd site && bundle exec jekyll serve --baseurl ''"
 }
