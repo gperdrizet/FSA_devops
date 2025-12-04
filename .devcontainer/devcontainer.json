@@ -12,12 +12,12 @@
 		}
 	},
 
-	"forwardPorts": [4000],
-	"portsAttributes": {
-		"4000": {
-			"label": "jekyll server"
-		}
-	},
+	// "forwardPorts": [4000],
+	// "portsAttributes": {
+	// 	"4000": {
+	// 		"label": "jekyll server"
+	// 	}
+	// },
 
 	// Custom configuration options
 	"customizations": {
@@ -34,7 +34,7 @@
 				"/usr/local/bin/python3"
 			],
 			"remote.restoreForwardedPorts": false,
-			"remote.autoForwardPorts": false
+			// "remote.autoForwardPorts": false
 		},
 
 		// Add the IDs of VS code extensions you want to install here
@@ -49,7 +49,7 @@
 	},
 
 	// Use 'onCreateCommand' to run commands once when the container is created
-	"onCreateCommand": "sudo apt update && sudo apt upgrade -y && pip3 install --upgrade pip && pip3 install --user -r requirements.txt",
+	"onCreateCommand": "sudo apt update && sudo apt upgrade -y && sudo apt install -y git-lfs && pip3 install --upgrade pip && pip3 install --user -r requirements.txt",
 
 	// Use 'postCreateCommand' to run commands once after the container is created
 	"postCreateCommand": "bundle install",
