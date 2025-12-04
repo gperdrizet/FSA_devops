@@ -77,3 +77,7 @@ permalink: /resources/
 ### Unit 2: applied data science with Python
 
 1. [Incremental capstone 1: import and clean data]({{ '/assets/slides/Capstone_Session_1.pdf' | relative_url }}){:target="_blank"}
+
+### Unit 2: applied data science with Python
+
+1. [Incremental capstone 5: Florida Bike Rentals]({{ '/assets/slides/Inc5_Capstone_FloridaBikeRentals.pdf' | relative_url }}){:target="_blank"}

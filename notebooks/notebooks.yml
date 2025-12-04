@@ -177,10 +177,3 @@ units:
             file: "Lesson_19_activity.ipynb"
           - name: "Activity solution"
             file: "Lesson_19_activity_solution.ipynb"
-
-      - number: "Incremental Capstone 5"
-        title: "Incremental Capstone 5"
-        topics: "Florida Bike Rentals"
-        notebooks:
-          - name: "Florida Bike Rentals"
-            file: "Inc5_Capstone_FloridaBikeRentals.pdf"
