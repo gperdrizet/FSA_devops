@@ -96,4 +96,12 @@ units:
         datasets:
           - name: "Florida Bike Rentals"
             file: "FloridaBikeRentals.csv"
-    
+
+      - number: "20"
+        title: "Supervised learning classification"
+        assignment: "Lesson 20 activity"
+        datasets:
+          - name: "Kaggle diabetes prediction training data"
+            file: "diabetes_prediction_train.csv"
+          - name: "Kaggle diabetes prediction testing data"
+            file: "diabetes_prediction_test.csv"
