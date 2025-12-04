@@ -177,8 +177,6 @@ All internal URLs use Jekyll's `relative_url` filter, which automatically adjust
 
 ## 5. Development Workflow
 
-## 5. Development Workflow
-
 ### Branch Strategy
 
 - **`main`**: Production branch - triggers automatic deployment to GitHub Pages
@@ -198,19 +196,26 @@ All internal URLs use Jekyll's `relative_url` filter, which automatically adjust
 
 ### Local Development
 
-The repository includes a dev container configuration for consistent development environments.
+The repository includes a dev container configuration for consistent development environments. The Jekyll server starts automatically when you attach to the container.
 
-Jekyll's live reload enables rapid iteration - most changes appear in your browser within seconds:
-
+**Manual Server Start**:
 ```bash
-# Start local Jekyll server (matches GitHub Pages config)
-make serve-local
+# Navigate to site directory and start Jekyll server with empty baseurl for local development
+cd site && bundle exec jekyll serve --baseurl ''
 
-# Site available at http://localhost:4000/FSA_devops
+# Site available at http://localhost:4000/
 # Automatically rebuilds on file changes
 ```
 
-**Note**: Local server uses production config with baseurl, so URLs will include `/FSA_devops` prefix.
+**Using Make**:
+```bash
+# Alternative: use make target (includes baseurl for GitHub Pages config)
+make serve-local
+
+# Site available at http://localhost:4000/FSA_devops
+```
+
+**Note**: The `--baseurl ''` flag is important for local development in Codespaces/dev containers, as it overrides the production baseurl setting. Without it, the site expects to be accessed at `/FSA_devops/` which doesn't work with port forwarding.
 
 ### Content Updates
 
