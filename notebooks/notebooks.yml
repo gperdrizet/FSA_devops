@@ -182,5 +182,7 @@ units:
         title: "Supervised learning classification"
         topics: "Classification models: types, training, evaluation, regularization"
         notebooks:
+          - name: "Demo"
+            file: "Lesson_20_demo.ipynb"
           - name: "Activity"
             file: "Lesson_20_activity.ipynb"
