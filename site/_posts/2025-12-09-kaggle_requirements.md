@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kaggle requirements"
-date: 2025-12-08
+date: 2025-12-9
 categories: resources
 ---
 
