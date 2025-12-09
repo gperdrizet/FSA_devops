@@ -5,7 +5,7 @@ date: 2025-12-9
 categories: resources
 ---
 
-Added a `requirements.txt` file for Kaggle notebooks.
+Added a `kaggle_requirements.txt` file for Kaggle notebooks.
 
 You may see warnings when running on Kaggle due to inconsistencies in installed package versions between your environment and Kaggle. If you are using a virtual environment already, install this [kaggle_requirements.txt](https://github.com/gperdrizet/FSA_devops/blob/main/notebooks/unit3/lesson_20/kaggle_requirements.txt):
 
