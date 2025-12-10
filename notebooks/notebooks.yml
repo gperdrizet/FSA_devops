@@ -186,3 +186,10 @@ units:
             file: "Lesson_20_demo.ipynb"
           - name: "Activity"
             file: "Lesson_20_activity.ipynb"
+      
+      - number: "INC6"
+        title: "Save the Princess"
+        topics: "Incremental capstone 6"
+        notebooks:
+          - name: "Save the Princess Starter"
+            file: "INC_6_Save_the_Princess.ipynb"
