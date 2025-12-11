@@ -115,6 +115,6 @@ units:
           - name: "Game Data"
             file: "Game_Data_Cleaned.csv"
           - name: "Video Game Sales"
-            file: "video_game_sales.csv"
+            file: "video_games_sales.csv"
           - name: "Wine Data"
             file: "wine_data.csv"
