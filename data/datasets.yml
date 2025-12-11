@@ -105,3 +105,16 @@ units:
             file: "diabetes_prediction_train.csv"
           - name: "Kaggle diabetes prediction testing data"
             file: "diabetes_prediction_test.csv"
+
+      - number: "INC6"
+        title: "Incremental capstone 6"
+        assignment: "Save the Princess"
+        datasets:
+          - name: "Cure Ingredients"
+            file: "Cure_the_princess.csv"
+          - name: "Game Data"
+            file: "Game_Data_Cleaned.csv"
+          - name: "Video Game Sales"
+            file: "video_game_sales.csv"
+          - name: "Wine Data"
+            file: "wine_data.csv"
