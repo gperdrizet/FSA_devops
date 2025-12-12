@@ -13,6 +13,7 @@ permalink: /resources/
 4. [Feature Engineering Overview]({{ '/resource_pages/feature_engineering.html' | relative_url }})
 5. [Regression Overview]({{ '/resource_pages/regression.html' | relative_url }})
 6. [Classification Overview]({{ '/resource_pages/classification.html' | relative_url }})
+7. [Ensemble Learning Overview]({{ '/resource_pages/ensemble_learning.html' | relative_url }})
 
 ---
 ## Cheat sheets & syntax reference
