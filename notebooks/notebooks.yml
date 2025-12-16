@@ -200,3 +200,10 @@ units:
         notebooks:
           - name: "Demo"
             file: "Lesson_21_demo.ipynb"
+
+      - number: "22"
+        title: "Unsupervised learning"
+        topics: "Clustering, dimensionality reduction"
+        notebooks:
+          - name: "Demo"
+            file: "Lesson_22_demo.ipynb"
