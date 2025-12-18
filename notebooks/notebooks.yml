@@ -209,3 +209,5 @@ units:
         notebooks:
           - name: "Demo"
             file: "Lesson_22_demo.ipynb"
+          - name: "Activity"
+            file: "Lesson_22_activity.ipynb"

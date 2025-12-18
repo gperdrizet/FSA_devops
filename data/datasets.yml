@@ -118,3 +118,10 @@ units:
             file: "video_games_sales.csv"
           - name: "Wine Data"
             file: "wine_data.csv"
+
+      - number: "22"
+        title: "Unsupervised learning: california_housing"
+        assignment: "Lesson 22 activity"
+        datasets:
+          - name: "Housing data for clustering"
+            file: "housing.csv"
