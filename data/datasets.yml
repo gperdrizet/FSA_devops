@@ -125,3 +125,11 @@ units:
         datasets:
           - name: "Housing data for clustering"
             file: "housing.csv"
+
+            
+      - number: "INC7"
+        title: "Incremental capstone 7"
+        assignment: "Clustering Credit Card Customers"
+        datasets:
+          - name: "Credit Card Data"
+            file: "CC_GENERAL.csv"
