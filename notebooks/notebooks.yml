@@ -193,6 +193,8 @@ units:
         notebooks:
           - name: "Save the Princess Starter"
             file: "INC_6_Save_the_Princess.ipynb"
+          - name: "Save the Princess (Solution)"
+            file: "INC_6_Save_the_Princess_Solution.ipynb"
 
       - number: "21"
         title: "Ensemble methods"
