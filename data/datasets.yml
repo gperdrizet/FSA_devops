@@ -133,3 +133,13 @@ units:
         datasets:
           - name: "Credit Card Data"
             file: "CC_GENERAL.csv"
+
+
+      - number: "INC8"
+        title: "Incremental capstone 8"
+        assignment: "Movie Recommendations"
+        datasets:
+          - name: "Movie Dataset"
+            file: "movies.csv"
+          - name: "Users Dataset"
+            file: "ratings.csv"
