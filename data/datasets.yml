@@ -125,21 +125,5 @@ units:
         datasets:
           - name: "Housing data for clustering"
             file: "housing.csv"
-
-            
-      - number: "INC7"
-        title: "Incremental capstone 7"
-        assignment: "Clustering Credit Card Customers"
-        datasets:
-          - name: "Credit Card Data"
-            file: "CC_GENERAL.csv"
-
-
-      - number: "INC8"
-        title: "Incremental capstone 8"
-        assignment: "Movie Recommendations"
-        datasets:
-          - name: "Movie Dataset"
-            file: "movies.csv"
-          - name: "Users Dataset"
-            file: "ratings.csv"
+          - name: "Market basket data for association rules"
+            file: "market_basket.csv"
