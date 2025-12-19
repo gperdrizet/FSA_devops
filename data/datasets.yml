@@ -125,3 +125,5 @@ units:
         datasets:
           - name: "Housing data for clustering"
             file: "housing.csv"
+          - name: "Market basket data for association rules"
+            file: "market_basket.csv"
