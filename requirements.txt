@@ -4,6 +4,7 @@ nbformat
 numpy
 matplotlib
 pandas
+plotly
 pywaffle
 scikit-learn
 scipy
