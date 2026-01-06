@@ -1,8 +1,10 @@
+imblearn
 ipykernel==6.30.1
 nbformat
 numpy
 matplotlib
 pandas
+plotly
 pywaffle
 scikit-learn
 scipy
