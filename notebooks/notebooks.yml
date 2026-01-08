@@ -119,7 +119,7 @@ units:
         title: "Probability distributions"
         topics: "Discrete and continuous distributions, central limit theorem"
         notebooks:
-          - name: "In class demo"
+          - name: "In-class demo"
             file: "Lesson_13_demo.ipynb"
           - name: "Activity"
             file: "Lesson_13_activity.ipynb"
@@ -130,7 +130,7 @@ units:
         title: "Advanced statistics"
         topics: "Confidence intervals, hypothesis testing"
         notebooks:
-          - name: "In class demo"
+          - name: "In-class demo"
             file: "Lesson_14_demo.ipynb"
           - name: "Activity"
             file: "Lesson_14_activity.ipynb"
@@ -141,7 +141,7 @@ units:
         title: "Data Wrangling"
         topics: "Manipulating and cleaning data"
         notebooks:
-          - name: "In class demo"
+          - name: "In-class demo"
             file: "Lesson_15_demo.ipynb"
           - name: "Activity"
             file: "Lesson_15_activity.ipynb"
@@ -152,7 +152,7 @@ units:
         title: "Feature Engineering"
         topics: "Creating and transforming features"
         notebooks:
-          - name: "In class demo"
+          - name: "In-class demo"
             file: "Lesson_16_demo.ipynb"
           - name: "Activity"
             file: "Lesson_16_activity.ipynb"
@@ -207,9 +207,17 @@ units:
         title: "Unsupervised learning"
         topics: "Clustering, dimensionality reduction"
         notebooks:
-          - name: "Demo"
+          - name: "In-class demo"
             file: "Lesson_22_demo.ipynb"
           - name: "Activity"
             file: "Lesson_22_activity.ipynb"
           - name: "Activity solution"
             file: "Lesson_22_activity_solution.ipynb"
+
+      - number: "23"
+        title: "Recommendation Systems"
+        topics: "Collaborative, Content, and Hybrid Filtering. "
+        notebooks:
+          - name: "Andrew's Partial Activity"
+            file: "Lesson_23_activity.ipynb"
+
