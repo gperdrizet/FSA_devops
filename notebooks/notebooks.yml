@@ -213,3 +213,11 @@ units:
             file: "Lesson_22_activity.ipynb"
           - name: "Activity solution"
             file: "Lesson_22_activity_solution.ipynb"
+
+      - number: "23"
+        title: "Recommendation Systems"
+        topics: "Collaborative, Content, and Hybrid Filtering. "
+        notebooks:
+          - name: "Andrew's Partial Activity"
+            file: "Lesson_23_activity.ipynb"
+

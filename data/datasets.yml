@@ -127,3 +127,11 @@ units:
             file: "housing.csv"
           - name: "Market basket data for association rules"
             file: "market_basket.csv"
+
+      - number: "23"
+        title: "Recommendation Systems: Board games"
+        assignment: "Lesson 23 activity (A)"
+        datasets:
+          - name: "Board Game User Ratings"
+            file: "user_ratings_sampled.csv"
+
