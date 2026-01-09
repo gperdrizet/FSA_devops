@@ -218,6 +218,8 @@ units:
         title: "Recommendation Systems"
         topics: "Collaborative, Content, and Hybrid Filtering. "
         notebooks:
+          - name: "In"
+            file: "Lesson_23_demo.ipynb"
           - name: "Andrew's Partial Activity"
             file: "Lesson_23_activity.ipynb"
           - name: "Andrew's Partial Activity Solution"
