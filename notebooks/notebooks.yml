@@ -220,4 +220,6 @@ units:
         notebooks:
           - name: "Andrew's Partial Activity"
             file: "Lesson_23_activity.ipynb"
+          - name: "Andrew's Partial Activity Solution"
+            file: "Lesson_23_activity_solution.ipynb"
 
