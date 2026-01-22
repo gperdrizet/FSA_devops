@@ -230,16 +230,25 @@ units:
     lessons:
       - number: "26"
         title: "Artificial neural networks"
-        topics: "Regression and classification with neural networks"
+        topics: "Supervised ML with simple neural networks in sklearn"
         notebooks:
           - name: "In-class demo"
             file: "Lesson_26_demo.ipynb"
           - name: "Activity"
             file: "Lesson_26_activity.ipynb"
 
+      - number: "27"
+        title: "Deep neural networks"
+        topics: "Supervised ML with simple neural networks in sklearn"
+        notebooks:
+          - name: "In-class demo (same as Lesson 26)"
+            file: "Lesson_26_demo.ipynb"
+          - name: "Activity (same as Lesson 26)"
+            file: "Lesson_26_activity.ipynb"
+
       - number: "28"
-        title: "Artificial neural networks"
-        topics: "Regression and classification with neural networks"
+        title: "TensorFlow"
+        topics: "Regression and classification with neural networks in TensorFlow"
         notebooks:
           - name: "In-class demo"
             file: "Lesson_28_demo.ipynb"
