@@ -97,7 +97,7 @@ Build cuda_12.5.r12.5/compiler.34385749_0
 
 ## 3. Local Docker/VS Code
 
-### 3.1. Oldest TensorFlow 2.16 configuration
+Here is the link to the GitHub repo that will walk you through setting up docker and using the devcontainer: [gperdrizet/tensorflow-GPU](https://github.com/gperdrizet/tensorflow-GPU#).
 
 Target is NVIDIA TensorFlow release 24.06 container. This gets us:
 

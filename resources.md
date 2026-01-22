@@ -6,7 +6,10 @@ permalink: /resources/
 
 ## TensorFlow notes (work-in-progress)
 
-[Tensorflow setup options]({{ '/devops_pages/tensorflow.html' | relative_url }})
+- [Tensorflow setup options]({{ '/devops_pages/tensorflow.html' | relative_url }})
+- TensorFlow development environment GitHub repository: [gperdrizet/tensorflow-GPU](https://github.com/gperdrizet/tensorflow-GPU#)
+- George's TensorFlow 2.16 container on DockerHub: [gperdrizet/tensorflow-gpu](https://hub.docker.com/r/gperdrizet/tensorflow-gpu)
+- NVIDIA's [TensorFlow Release 24.06 container](https://docs.nvidia.com/deeplearning/frameworks/tensorflow-release-notes/rel-24-06.html)
 
 ## How-to Guides & Instructions
 
