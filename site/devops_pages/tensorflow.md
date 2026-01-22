@@ -21,7 +21,8 @@ Vocareum is pre-installed with Tensorflow 2.13 on python 3.10.
 
 Both work out-of-the box with pre-configured environments.
 
-**CoLab**:
+### 2.1. CoLab:
+
 - GPU: T4 16GB
 - NVIDIA driver: 550
 - CUDA: 12.5
@@ -59,7 +60,7 @@ Build cuda_12.5.r12.5/compiler.34385749_0
 
 Some Google magic here?...
 
-**Kaggle**: 
+### 2.2. Kaggle
 
 - GPU: P100 16GB or 2x T4 16GB
 - NVIDIA driver: 570
@@ -94,6 +95,18 @@ Cuda compilation tools, release 12.5, V12.5.82
 Build cuda_12.5.r12.5/compiler.34385749_0
 ```
 
-## 3. Local Docker
+## 3. Local Docker/VS Code
 
+### 3.1. Oldest TensorFlow 2.16 configuration
 
+Target is NVIDIA TensorFlow release 24.06 container. This gets us:
+
+- CUDA: 12.5
+- Python: 3.10
+- TensorFlow: 2.16
+
+This is a far back as we can reasonably go. Any further and we loose TensorFlow 2.16, and therefore Keras 3 default. This configuration should support Pascal cards with driver 545 and later.
+
+**Note**: While this is an officially supported configuration, it is considered legacy and won't receive updates.
+
+### 3.2. Newest Pascal supported configuration
