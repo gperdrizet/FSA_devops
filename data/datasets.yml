@@ -135,3 +135,12 @@ units:
           - name: "Board Game User Ratings"
             file: "user_ratings_sampled.csv"
 
+  - name: "Unit 4: Deep Learning with TensorFlow and PyTorch"
+    number: 4
+    lessons:
+      - number: "28"
+        title: "TensorFlow"
+        assignment: "Lesson 28 activity"
+        datasets:
+          - name: "Room occupancy data"
+            file: "occupancy_data.csv"

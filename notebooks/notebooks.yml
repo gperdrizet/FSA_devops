@@ -225,7 +225,7 @@ units:
           - name: "Andrew's Partial Activity Solution"
             file: "Lesson_23_activity_solution.ipynb"
 
-  - name: "Unit 4: Deep learning"
+  - name: "Unit 4: Deep Learning with TensorFlow and PyTorch"
     number: 4
     lessons:
       - number: "26"
@@ -236,3 +236,12 @@ units:
             file: "Lesson_26_demo.ipynb"
           - name: "Activity"
             file: "Lesson_26_activity.ipynb"
+
+      - number: "28"
+        title: "Artificial neural networks"
+        topics: "Regression and classification with neural networks"
+        notebooks:
+          - name: "In-class demo"
+            file: "Lesson_28_demo.ipynb"
+          - name: "Activity"
+            file: "Lesson_28_activity.ipynb"
