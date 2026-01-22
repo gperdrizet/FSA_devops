@@ -144,3 +144,5 @@ units:
         datasets:
           - name: "Room occupancy data"
             file: "occupancy_data.csv"
+          - name: "Preprocessed housing data"
+            file: "preprocessed_housing_data.pkl"
