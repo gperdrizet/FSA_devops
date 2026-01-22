@@ -4,6 +4,10 @@ title: Resources
 permalink: /resources/
 ---
 
+## TensorFlow notes (work-in-progress)
+
+[Tensorflow setup options]({{ '/devops_pages/tensorflow.html' | relative_url }})
+
 ## How-to Guides & Instructions
 
 1. [DevOps Guides Overview]({{ '/devops_pages/overview.html' | relative_url }})
