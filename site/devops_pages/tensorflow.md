@@ -99,7 +99,9 @@ Build cuda_12.5.r12.5/compiler.34385749_0
 
 Here is the link to the GitHub repo that will walk you through setting up docker and using the devcontainer: [gperdrizet/tensorflow-GPU](https://github.com/gperdrizet/tensorflow-GPU#).
 
-Target is NVIDIA TensorFlow release 24.06 container. This gets us:
+**Note**: there is now a CPU only version of the devcontainer which provides a similar environment for folks without an NVIDIA GPU. You can find it here: [gperdrizet/tensorflow-CPU](https://github.com/gperdrizet/tensorflow-CPU).
+
+For folks with an NVIDIA GPU, the target environment is a NVIDIA TensorFlow release 24.06 container. This gets us:
 
 - CUDA: 12.5
 - Python: 3.10
