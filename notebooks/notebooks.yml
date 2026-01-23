@@ -250,7 +250,9 @@ units:
         title: "TensorFlow"
         topics: "Regression and classification with neural networks in TensorFlow"
         notebooks:
-          - name: "In-class demo"
-            file: "Lesson_28_demo.ipynb"
+          - name: "In-class demo, part 1"
+            file: "Lesson_28_demo_part1.ipynb"
+          - name: "In-class demo, part 2"
+            file: "Lesson_28_demo_part2.ipynb"
           - name: "Activity"
             file: "Lesson_28_activity.ipynb"
