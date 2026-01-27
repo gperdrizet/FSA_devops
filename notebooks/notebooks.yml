@@ -256,3 +256,5 @@ units:
             file: "Lesson_28_demo_part2.ipynb"
           - name: "Activity"
             file: "Lesson_28_activity.ipynb"
+          - name: "Activity solution"
+            file: "Lesson_28_activity_solution.ipynb"

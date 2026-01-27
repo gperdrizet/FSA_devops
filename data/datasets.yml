@@ -129,7 +129,7 @@ units:
             file: "market_basket.csv"
 
       - number: "23"
-        title: "Recommendation Systems: Board games"
+        title: "Recommendation systems: board games"
         assignment: "Lesson 23 activity (A)"
         datasets:
           - name: "Board Game User Ratings"
@@ -146,3 +146,9 @@ units:
             file: "occupancy_data.csv"
           - name: "Preprocessed housing data"
             file: "preprocessed_housing_data.pkl"
+
+      - number: "INC9"
+        title: "Incremental capstone 9"
+        datasets:
+          - name: "Banking customer data"
+            file: "Churn_Modeling.csv"
