@@ -273,3 +273,14 @@ units:
             file: "Lesson_29_demo_part2.ipynb"
           - name: "Activity part 2"
             file: "Lesson_29_activity_part2.ipynb"
+          - name: "Activity part 2 solution"
+            file: "Lesson_29_activity_part2_solution.ipynb"
+
+      - number: "31"
+        title: "Convolutional Neural Networks"
+        topics: "Convolutional and pooling layers, CNN architectures"
+        notebooks:
+          - name: "In-class demo"
+            file: "Lesson_31_demo.ipynb"
+          - name: "Activity"
+            file: "Lesson_31_activity.ipynb"
