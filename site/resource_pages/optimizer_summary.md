@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Optimizers summary
-permalink: /resource_pages/optimizers_summary.html
+permalink: /resource_pages/optimizer_summary.html
 nav_exclude: true
 ---
 
