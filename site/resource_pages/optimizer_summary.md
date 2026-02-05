@@ -1,4 +1,9 @@
-# Optimizer summary - Lesson 30 demo part 1
+---
+layout: page
+title: Optimizers summary
+permalink: /resource_pages/optimizers_summary.html
+nav_exclude: true
+---
 
 This document summarizes the four optimizers compared in the Lesson 30 demo.
 
