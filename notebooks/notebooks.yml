@@ -284,3 +284,16 @@ units:
             file: "Lesson_31_demo.ipynb"
           - name: "Activity"
             file: "Lesson_31_activity.ipynb"
+          - name: "Activity solution"
+            file: "Lesson_31_activity_solution.ipynb"
+
+      - number: "30"
+        title: "Model optimization and performance improvement"
+        topics: "Optimizers, hyperparameter tuning"
+        notebooks:
+          - name: "In-class demo, part 1"
+            file: "Lesson_30_demo_part1.ipynb"
+          - name: "In-class demo, part 2"
+            file: "Lesson_30_demo_part2.ipynb"
+          - name: "Activity"
+            file: "Lesson_30_activity.ipynb"
