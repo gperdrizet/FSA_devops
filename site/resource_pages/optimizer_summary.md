@@ -1,13 +1,16 @@
----
-layout: page
-title: Optimizer summary
-permalink: /resource_pages/optimizer_summary.html
-nav_exclude: true
----
-
-# Optimizer summary
+# Optimizer summary - Lesson 30 demo part 1
 
 This document summarizes the four optimizers compared in the Lesson 30 demo.
+
+## Key terms
+
+- **Gradient descent**: An optimization algorithm that iteratively adjusts model parameters in the direction that reduces the loss function, using the gradient (slope) to determine the direction of steepest descent.
+
+- **Learning rate**: A hyperparameter that controls how much to adjust the model's parameters with each update. Too high causes overshooting; too low causes slow convergence.
+
+- **Momentum**: A technique that accelerates gradient descent by accumulating a velocity vector from past gradients, helping the optimizer move faster through flat regions and dampen oscillations.
+
+- **Adaptive learning rate**: A method that automatically adjusts the learning rate for each parameter individually based on the history of gradients, allowing larger updates for infrequent parameters and smaller updates for frequent ones.
 
 ## Optimizers overview
 
