@@ -152,3 +152,9 @@ units:
         datasets:
           - name: "Banking customer data"
             file: "Churn_Modeling.csv"
+
+      - number: "INC10"
+        title: "Incremental capstone 10"
+        datasets:
+          - name: "Face Mask Detection"
+            file: "Face_mask_detection.zip"
