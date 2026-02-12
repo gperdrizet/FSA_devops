@@ -304,3 +304,12 @@ units:
         notebooks:
           - name: "Demo/activity"
             file: "Lesson_32_demo.ipynb"
+            
+      - number: "33"
+        title: "Object Detection"
+        topics: "YOLO, Object Detection, Segmenation, Pose Estimation..."
+        notebooks:
+          - name: "In-class demo"
+            file: "Lesson_33_demo.ipynb"
+          - name: "Activity"
+            file: "Lesson_33_activity.ipynb"
