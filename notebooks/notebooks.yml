@@ -297,3 +297,10 @@ units:
             file: "Lesson_30_demo_part2.ipynb"
           - name: "Activity"
             file: "Lesson_30_activity.ipynb"
+
+      - number: "32"
+        title: "Transfer Learning"
+        topics: "Transfer learning, fine-tuning, ResNet"
+        notebooks:
+          - name: "Demo/activity"
+            file: "Lesson_32_demo.ipynb"
