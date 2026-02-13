@@ -10,6 +10,7 @@ This repository powers a Jekyll-based GitHub Pages site that serves as a central
 
 - **Blog posts**: Updates, announcements, and educational content
 - **Jupyter notebooks**: Interactive coding exercises and demonstrations
+- **GitHub repositories**: Projects & demos that need more than a single Jupyter notebook
 - **Datasets**: CSV files and data resources for student activities
 - **DevOps guides**: Setup instructions for Git, Python, and VS Code on Windows and macOS
 - **External resources**: Curated links to documentation, tutorials, and tools
@@ -26,6 +27,7 @@ This repository uses [Git Large File Storage (LFS)](https://git-lfs.github.com/)
 - **Pickle files** (`*.pkl`) - Serialized Python objects
 - **Parquet files** (`*.parquet`) - Columnar data files
 - **PDF files** (`*.pdf`) - Documentation and resources
+- **ZIP archives** (`*.zip`) - Datasets
 
 Git LFS is automatically installed in the dev container during build. When cloning this repository, ensure you have Git LFS installed:
 
@@ -69,15 +71,13 @@ FSA_devops/
 
 ### Jekyll Site Implementation
 
-**Theme**: Uses the [Minima theme](https://github.com/jekyll/minima) via remote theme configuration for consistent styling and layout.
-
-**Data-Driven Content**: The site leverages Jekyll's data files feature to separate content from presentation:
+The site leverages Jekyll's data files feature to separate content from presentation:
 
 - `_data/notebooks.yml`: Contains structured metadata for all Jupyter notebooks (units, lessons, GitHub links, Colab links)
 - `_data/datasets.yml`: Defines dataset information including descriptions and download links
 - Liquid templating in `notebooks.md` and `datasets.md` dynamically generates tables from YAML data
 
-This approach reduces maintenance burden by significantly. Adding new content requires only YAML edits rather than manual HTML/Markdown updates.
+This approach reduces maintenance burden significantly. Adding new content requires only file uploads and YAML edits rather than manual HTML/Markdown updates.
 
 **Custom Components**: The `_includes/header.html` file implements navigation filtering to exclude pages with `nav_exclude: true` in their front matter, enabling draft pages and hidden content.
 
@@ -87,11 +87,11 @@ The main branch has protections in place that prevent direct pushes without a pu
 
 ### 3.1. Pull Request Preview Workflow
 
-When you open a PR from `dev` to `main`, two automated processes run:
+When you open a PR from to `main`, two automated processes run:
 
 #### GitHub Actions Build (`test-gh-pages.yml`)
 - **Trigger**: PR opened/reopened/synchronized or manual dispatch
-- **Purpose**: Validates that site builds successfully with the Makefile-based workflow
+- **Purpose**: Validates that site builds successfully
 - **Process**: 
   1. Checks out repository code
   2. Sets up Ruby environment
@@ -185,7 +185,7 @@ All internal URLs use Jekyll's `relative_url` filter, which automatically adjust
 
 ### Pull Request Process
 
-1. **Create PR**: Open pull request from `dev` to `main` on GitHub
+1. **Create PR**: Open pull request from `branch` to `main` on GitHub
 2. **Automated Checks**: 
    - GitHub Actions builds site and reports status
    - Render creates preview deployment (link posted in PR comment)
