@@ -159,7 +159,7 @@ units:
           - name: "Face mask detection dataset"
             file: "Face_mask_detection.zip"
 
-    - number: "INC11"
+      - number: "INC11"
         title: "Incremental capstone 11"
         datasets:
           - name: "Grammar and Product Reviews"
