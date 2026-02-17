@@ -307,7 +307,7 @@ units:
             
       - number: "33"
         title: "Object Detection"
-        topics: "YOLO, Object Detection, Segmenation, Pose Estimation..."
+        topics: "YOLO, Object Detection, Segmentation, Pose Estimation..."
         notebooks:
           - name: "In-class demo"
             file: "Lesson_33_demo.ipynb"
@@ -324,5 +324,5 @@ units:
             file: "Lesson_34_demo_part2.ipynb"
           - name: "Activity"
             file: "Lesson_34_activity.ipynb"
-          - name: "Activity"
+          - name: "Activity solution"
             file: "Lesson_34_activity_solution.ipynb"
