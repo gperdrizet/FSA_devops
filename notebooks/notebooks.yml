@@ -313,3 +313,16 @@ units:
             file: "Lesson_33_demo.ipynb"
           - name: "Activity"
             file: "Lesson_33_activity.ipynb"
+
+      - number: "34"
+        title: "Recurrent neural networks"
+        topics: "Recurrent neural networks, intro to NLP, GRU"
+        notebooks:
+          - name: "In-class demo (alphabet)"
+            file: "Lesson_34_demo_part1.ipynb"
+          - name: "In-class demo (Twitter sentiment)"
+            file: "Lesson_34_demo_part2.ipynb"
+          - name: "Activity"
+            file: "Lesson_34_activity.ipynb"
+          - name: "Activity"
+            file: "Lesson_34_activity_solution.ipynb"

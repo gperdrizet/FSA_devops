@@ -146,6 +146,12 @@ units:
             file: "occupancy_data.csv"
           - name: "Preprocessed housing data"
             file: "preprocessed_housing_data.pkl"
+      - number: "34"
+        title: "Recurrent neural networks"
+        assignment: "Lesson 34 demo/activity"
+        datasets:
+          - name: "2016 Twitter sentiment data"
+            file: "twitter-2016.parquet"
 
       - number: "INC9"
         title: "Incremental capstone 9"
