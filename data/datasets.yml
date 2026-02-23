@@ -171,3 +171,9 @@ units:
           - name: "Grammar and Product Reviews"
             file: "GrammarandProductReviews.csv"
 
+      - number: "INC12"
+        title: "Incremental capstone 12"
+        datasets:
+          - name: "Dental X-rays"
+            file: "DENTAL_1.NPZ"
+
