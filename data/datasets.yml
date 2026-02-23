@@ -177,3 +177,19 @@ units:
           - name: "Dental X-rays"
             file: "DENTAL_1.NPZ"
 
+      - number: "CEP4 #A"
+        title: "Course End Project 4"
+        assignment: "Home Loan"
+        datasets:
+          - name: "Home Loan - Data"
+            file: "Home_Loan.csv"
+          - name: "Home Loan - Dictionary"
+            file: "Home_Loan_Dictionary.csv"
+
+      - number: "CEP4 #B"
+        title: "Course End Project 4"
+        assignment: "Lending Club"
+        datasets:
+          - name: "Lending_Club - Data"
+            file: "Lending_Club.csv"
+
