@@ -340,3 +340,11 @@ units:
             file: "Lesson_38_activity.ipynb"
           - name: "Activity solution"
             file: "Lesson_38_activity_solution.ipynb"
+      - number: "39"
+        title: "Text vectorization"
+        topics: "Vectorizing text data for machine learning models"
+        notebooks:
+          - name: "In-class demo"
+            file: "Lesson_39_demo.ipynb"
+          - name: "Activity"
+            file: "Lesson_39_activity.ipynb"
