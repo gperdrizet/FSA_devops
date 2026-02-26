@@ -326,3 +326,15 @@ units:
             file: "Lesson_34_activity.ipynb"
           - name: "Activity solution"
             file: "Lesson_34_activity_solution.ipynb"
+
+  - name: "Unit 5: Natural Language Processing"
+    number: 5
+    lessons:
+      - number: "38"
+        title: "Text data analysis"
+        topics: "Cleaning and understanding text data before vectorization"
+        notebooks:
+          - name: "In-class demo"
+            file: "Lesson_38_demo.ipynb"
+          - name: "Activity"
+            file: "Lesson_38_activity.ipynb"
