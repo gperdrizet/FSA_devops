@@ -22,3 +22,7 @@ As the course progresses and projects get more complex, we will start to move aw
 7. **YOLO26 activity**: [`gperdrizet/YOLO26`](https://github.com/gperdrizet/YOLO26) - simple Streamlit web app on Streamlit Community Cloud that does real-time object detection via your webcam. Activity prompts you to deploy the app for yourself and then extend its functionality.
 
 8. **RNN demo/activity**: [`gperdrizet/RNNs`](https://github.com/gperdrizet/RNNs) - intro to RNNs (learning the alphabet) and NLP/GRUs (Twitter sentiment analysis), activity prompts you to improve the twitter model by implementing a hybrid CNN/RNN model.
+
+9. **Autoencoders demo**: [gperdrizet/autoencoders](https://github.com/gperdrizet/autoencoders) Demonstration of convolutional autoencoder models for compression, denoising and anomaly detection with images.
+
+10. **Distributed GANN training**: [gperdrizet/GANNs-with-freinds](https://github.com/gperdrizet/GANNs-with-friends). Distributed deep learning demo using DCGANNs to generate realistic images of faces.
