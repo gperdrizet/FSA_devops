@@ -1,8 +1,12 @@
 ---
 layout: post
-title: "Lesson 44 and 45: chatbots demo"
+title: "Chatbots demo updates"
 date: 2026-03-12
 categories: resources
 ---
 
-Posted a link to the [chatbots demonstration repository](https://github.com/gperdrizet/llms-demo) we started today on the GitHub repositories page.
+Lots of updates to the [chatbots demo repository](https://github.com/gperdrizet/llms-demo) during and after class tonight. We've now got:
+
+- High performance model hosting with `llama.cpp`
+- A web app UI for our chatbots using Gradio
+- Better documentation
