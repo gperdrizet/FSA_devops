@@ -5,8 +5,6 @@ permalink: /resource_pages/genai_applications_unit_outline.html
 nav_exclude: true
 ---
 
-# Course 06: Essentials and Applications of Generative AI - Lesson outlines
-
 ## Lesson 44: State of the art in generative AI (LLM landscape and foundations)
 
 **Focus:** Survey of state-of-the-art LLMs with foundational concepts for understanding and comparing models
