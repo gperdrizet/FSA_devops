@@ -6,7 +6,7 @@ permalink: /repos/
 
 As the course progresses and projects get more complex, we will start to move away from single notebooks and rely more on GitHub repositories.
 
-## Containerized developments environments
+## Containerized development environments
 
 1. **DeepLearning GPU development environment**: [`gperdrizet/deeplearning-GPU`](https://github.com/gperdrizet/deeplearning-GPU) - template for my preconfigured development environments. Set up for wide NVIDIA GPU compatibility (Pascal or later).
 
@@ -29,10 +29,10 @@ As the course progresses and projects get more complex, we will start to move aw
 
 6. **RNN demo/activity**: [`gperdrizet/RNNs`](https://github.com/gperdrizet/RNNs) - intro to RNNs (learning the alphabet) and NLP/GRUs (Twitter sentiment analysis), activity prompts you to improve the twitter model by implementing a hybrid CNN/RNN model.
 
-7. **Autoencoders demo**: [gperdrizet/autoencoders](https://github.com/gperdrizet/autoencoders) Demonstration of convolutional autoencoder models for compression, denoising and anomaly detection with images.
+7. **Autoencoders demo**: [`gperdrizet/autoencoders`](https://github.com/gperdrizet/autoencoders) Demonstration of convolutional autoencoder models for compression, denoising and anomaly detection with images.
 
-8. **Distributed GANN training**: [gperdrizet/GANNs-with-freinds](https://github.com/gperdrizet/GANNs-with-friends). Distributed deep learning demo using DCGANNs to generate realistic images of faces.
+8. **Distributed GANN training**: [g`perdrizet/GANNs-with-friends](https://github.com/gperdrizet/GANNs-with-friends). Distributed deep learning demo using DCGANNs to generate realistic images of faces.
 
-9. **Encoder decoder translation models**: [gperdrizet/language-models](https://github.com/gperdrizet/language-models). Neural machine translation models using encoder-decoder architecture and LSTM+attention.
+9. **Encoder decoder translation models**: [`gperdrizet/language-models`](https://github.com/gperdrizet/language-models). Neural machine translation models using encoder-decoder architecture and LSTM+attention, builds up to implementation of the first transformer model.
 
-10. **LLM chatbots demonstrations**: [gperdrizet/llms-demo](https://github.com/gperdrizet/llms-demo). Demonstrations of several different strategies for hosting LLMs and frameworks for building simple chatbot applications.
+10. **LLM applications demonstrations**: [`gperdrizet/llms-demo`](https://github.com/gperdrizet/llms-demo). Demonstrations related to building LLM based applications topics covered include hosting models for inference, prompting strategies and LangChain for application development. Also includes slides and activities.
