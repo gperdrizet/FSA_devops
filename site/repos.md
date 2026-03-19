@@ -8,11 +8,10 @@ As the course progresses and projects get more complex, we will start to move aw
 
 ## Containerized development environments
 
-1. **DeepLearning GPU development environment**: [`gperdrizet/deeplearning-GPU`](https://github.com/gperdrizet/deeplearning-GPU) - template for my preconfigured development environments. Set up for wide NVIDIA GPU compatibility (Pascal or later).
+1. **DeepLearning PyTorch/Tensorflow development environment**: [`gperdrizet/deeplearning-GPU`](https://github.com/gperdrizet/deeplearning-devcontainer) - template repository for containerized deeplearning development environment with wide (GPU, Pascal+, CPU only) hardware compatibility.
 
-2. **DeepLearning CPU development environment**: [`gperdrizet/deeplearning-CPU`](https://github.com/gperdrizet/deeplearning-CPU) - this version has the same toolset and configuration, but is designed for folks without NVIDIA GPUs.
 
-3. **Large language models hosting/development environment**: [`gperdrizet/llms-devcontainer`](https://github.com/gperdrizet/llms-devcontainer) - template repository for working on LLM applications with compatibility for GPU or CPU only. Also includes tools for local inference server hosting.
+2. **Large language model hosting/development environment**: [`gperdrizet/llms-devcontainer`](https://github.com/gperdrizet/llms-devcontainer) - template repository for working on LLM applications with compatibility for GPU or CPU only. Also includes tools for local inference server hosting.
 
 
 ## Demos & activities
