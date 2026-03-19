@@ -4,7 +4,7 @@
 
 [GitHub Pages blog](https://gperdrizet.github.io/FSA_devops/) for updates, additional resources and how-to guides related to the Fullstack Academy AI/ML program, cohort 2510-FTB-CT-AIM-PT.
 
-## 1. Overview
+## Overview
 
 This repository powers a Jekyll-based GitHub Pages site that serves as a central hub for bootcamp materials, including:
 
@@ -17,31 +17,7 @@ This repository powers a Jekyll-based GitHub Pages site that serves as a central
 
 The project implements a data-driven architecture using YAML configuration files and Liquid templating to minimize maintenance overhead and enable rapid content updates.
 
-## 2. Architecture
-
-### Git LFS Configuration
-
-This repository uses [Git Large File Storage (LFS)](https://git-lfs.github.com/) to efficiently manage large binary files. The following file types are automatically tracked with Git LFS:
-
-- **CSV files** (`*.csv`) - Dataset files in the `data/` directory
-- **Pickle files** (`*.pkl`) - Serialized Python objects
-- **Parquet files** (`*.parquet`) - Columnar data files
-- **PDF files** (`*.pdf`) - Documentation and resources
-- **ZIP archives** (`*.zip`) - Datasets
-
-Git LFS is automatically installed in the dev container during build. When cloning this repository, ensure you have Git LFS installed:
-
-```bash
-# Install Git LFS (if not already installed)
-git lfs install
-
-# Clone repository (LFS files are automatically downloaded)
-git clone https://github.com/gperdrizet/FSA_devops.git
-```
-
-GitHub Pages automatically resolves LFS pointers, so dataset download links work seamlessly for end users without any special configuration.
-
-### Repository Structure
+## Repository structure
 
 ```
 FSA_devops/
@@ -69,7 +45,9 @@ FSA_devops/
 └── resources.md            # Resource links (copied to site/)
 ```
 
-### Jekyll Site Implementation
+## Site architecture
+
+### Data-driven Jekyll implementation
 
 The site leverages Jekyll's data files feature to separate content from presentation:
 
@@ -79,17 +57,39 @@ The site leverages Jekyll's data files feature to separate content from presenta
 
 This approach reduces maintenance burden significantly. Adding new content requires only file uploads and YAML edits rather than manual HTML/Markdown updates.
 
-**Custom Components**: The `_includes/header.html` file implements navigation filtering to exclude pages with `nav_exclude: true` in their front matter, enabling draft pages and hidden content.
+**Custom components**: The `_includes/header.html` file implements navigation filtering to exclude pages with `nav_exclude: true` in their front matter, enabling draft pages and hidden content.
 
-## 3. CI/CD Pipeline
+### Git LFS configuration
+
+This repository uses [Git Large File Storage (LFS)](https://git-lfs.github.com/) to efficiently manage large binary files. The following file types are automatically tracked with Git LFS:
+
+- **CSV files** (`*.csv`) - Dataset files in the `data/` directory
+- **Pickle files** (`*.pkl`) - Serialized Python objects
+- **Parquet files** (`*.parquet`) - Columnar data files
+- **PDF files** (`*.pdf`) - Documentation and resources
+- **ZIP archives** (`*.zip`) - Datasets
+
+Git LFS is automatically installed in the dev container during build. When cloning this repository, ensure you have Git LFS installed:
+
+```bash
+# Install Git LFS (if not already installed)
+git lfs install
+
+# Clone repository (LFS files are automatically downloaded)
+git clone https://github.com/gperdrizet/FSA_devops.git
+```
+
+GitHub Pages automatically resolves LFS pointers, so dataset download links work seamlessly for end users without any special configuration.
+
+## CI/CD pipeline
 
 The main branch has protections in place that prevent direct pushes without a pull request. To merge a pull request into main, a test build and preview deployment must first complete successfully.
 
-### 3.1. Pull Request Preview Workflow
+### Pull request preview workflow
 
-When you open a PR from to `main`, two automated processes run:
+When you open a PR to `main`, two automated processes run:
 
-#### GitHub Actions Build (`test-gh-pages.yml`)
+#### GitHub Actions build (`test-gh-pages.yml`)
 - **Trigger**: PR opened/reopened/synchronized or manual dispatch
 - **Purpose**: Validates that site builds successfully
 - **Process**: 
@@ -99,39 +99,39 @@ When you open a PR from to `main`, two automated processes run:
   4. Posts comment on PR with Render preview URL
 - **Output**: Build status check on PR
 
-#### Render.com Preview Deployment
+#### Render.com preview deployment
 - **Trigger**: PR opened from `dev` branch (automatic via Render PR preview feature)
 - **Purpose**: Creates a live preview of changes before merging to production
 - **Process**:
   1. Installs Ruby dependencies: `cd site && bundle install`
   2. Builds site with Render config: `make build-render` (uses merged `_config.yml` + `_config_render.yml`)
   3. Deploys to temporary preview URL: `fsa-devops-preview-pr-{NUMBER}.onrender.com`
-- **URL Format**: Each PR gets a unique preview URL (e.g., `fsa-devops-preview-pr-42.onrender.com`)
+- **URL format**: Each PR gets a unique preview URL (e.g., `fsa-devops-preview-pr-42.onrender.com`)
 - **Lifecycle**: Preview deployment is automatically deleted when PR is closed/merged
-- **Config Files**:
+- **Config files**:
   - `site/_config.yml`: Production config with `baseurl: "/FSA_devops"`
   - `site/_config_render.yml`: Override config with empty baseurl for root-level deployment
 
-**Why Two Configs?**
+#### Why two configs?
 - GitHub Pages deploys to a subpath: `gperdrizet.github.io/FSA_devops/`
 - Render deploys to root: `fsa-devops-preview-pr-42.onrender.com/`
 - Jekyll's `relative_url` filter uses `baseurl` to generate correct URLs for each environment
 
-### 3.2. Production Deployment (`deploy-gh-pages.yml`)
+### Production deployment (`deploy-gh-pages.yml`)
 
 - **Trigger**: Pushes to `main` branch or manual dispatch
 - **Process**:
-   1. **Checkout**: Clones repository with full history
-   2. **Asset Staging**: Copies notebooks, datasets, and configuration files into the Jekyll source directory (`site/`)
+  1. **Checkout**: Clones repository with full history
+  2. **Asset staging**: Copies notebooks, datasets, and configuration files into the Jekyll source directory (`site/`)
       - Notebooks → `site/assets/notebooks/`
       - Datasets → `site/assets/data/`
       - YAML configs → `site/_data/`
       - Resources page → `site/`
-   3. **Jekyll Build**: Compiles site using `actions/jekyll-build-pages@v1` with Minima theme
-   4. **Artifact Upload**: Packages the `_site` directory for deployment
-   5. **Deployment**: Publishes to GitHub Pages using `actions/deploy-pages@v4`
+  3. **Jekyll build**: Compiles site using `actions/jekyll-build-pages@v1` with Minima theme
+  4. **Artifact upload**: Packages the `_site` directory for deployment
+  5. **Deployment**: Publishes to GitHub Pages using `actions/deploy-pages@v4`
 
-### Benefits:
+### Pipeline benefits
 - Catches Jekyll build errors early in the development cycle
 - Validates YAML syntax and Liquid template logic
 - Ensures asset copying and file structure integrity
@@ -139,11 +139,11 @@ When you open a PR from to `main`, two automated processes run:
 - Enables visual review of changes before production deployment
 - Supports collaborative review with live preview links
 
-## 4. Build System
+## Build system
 
 The repository uses a Makefile-based build system for consistent asset management and Jekyll compilation across environments.
 
-### Available Make Targets
+### Available make targets
 
 ```bash
 make help              # Show all available targets
@@ -159,7 +159,7 @@ make serve-local       # Start local Jekyll server
 make validate-links    # Check for broken internal links
 ```
 
-### Multi-Environment Support
+### Multi-environment support
 
 The build system supports two deployment targets:
 
@@ -175,30 +175,30 @@ The build system supports two deployment targets:
 
 All internal URLs use Jekyll's `relative_url` filter, which automatically adjusts based on the `baseurl` setting.
 
-## 5. Development Workflow
+## Development workflow
 
-### Branch Strategy
+### Branch strategy
 
 - **`main`**: Production branch - triggers automatic deployment to GitHub Pages
 - **`dev`**: Development branch - used for feature work and testing
 - **Feature branches**: Created as needed for specific enhancements
 
-### Pull Request Process
+### Pull request process
 
 1. **Create PR**: Open pull request from `branch` to `main` on GitHub
-2. **Automated Checks**: 
+2. **Automated checks**: 
    - GitHub Actions builds site and reports status
    - Render creates preview deployment (link posted in PR comment)
-3. **Review Changes**: Visit preview URL to verify changes work correctly
+3. **Review changes**: Visit preview URL to verify changes work correctly
 4. **Merge**: Once approved and checks pass, merge to `main`
 5. **Deploy**: Production deployment to GitHub Pages triggers automatically
 6. **Cleanup**: Render automatically deletes preview deployment
 
-### Local Development
+### Local development
 
 The repository includes a dev container configuration for consistent development environments. The Jekyll server starts automatically when you attach to the container.
 
-**Manual Server Start**:
+#### Manual server start
 ```bash
 # Navigate to site directory and start Jekyll server with empty baseurl for local development
 cd site && bundle exec jekyll serve --baseurl ''
@@ -207,7 +207,7 @@ cd site && bundle exec jekyll serve --baseurl ''
 # Automatically rebuilds on file changes
 ```
 
-**Using Make**:
+#### Using make
 ```bash
 # Alternative: use make target (includes baseurl for GitHub Pages config)
 make serve-local
@@ -217,25 +217,25 @@ make serve-local
 
 **Note**: The `--baseurl ''` flag is important for local development in Codespaces/dev containers, as it overrides the production baseurl setting. Without it, the site expects to be accessed at `/FSA_devops/` which doesn't work with port forwarding.
 
-### Content Updates
+### Content updates
 
-**Adding Notebooks**:
+#### Adding notebooks
 1. Place `.ipynb` file in appropriate `notebooks/unit*/lesson*/` directory
 2. Add metadata entry to `notebooks/notebooks.yml`
 3. Commit and push - build process automatically copies to site assets
 
-**Adding Datasets**:
+#### Adding datasets
 1. Place CSV file in `data/` directory
 2. Add metadata to `data/datasets.yml`
 3. Build process handles asset copying during deployment
 
-**Writing Blog Posts**:
+#### Writing blog posts
 1. Create markdown file in `site/_posts/` using naming convention: `YYYY-MM-DD-title.md`
 2. Include YAML front matter with `layout`, `title`, `date`, and optional `categories`
 3. Use `{{ '/path/to/resource' | relative_url }}` for any internal links
 4. Jekyll automatically includes posts in chronological order on homepage
 
-**Updating Resources**:
+#### Updating resources
 1. Edit `resources.md` in repository root
 2. Use `{{ '/path' | relative_url }}` filter for all internal links
 3. Build process copies file to `site/` directory
