@@ -12,7 +12,7 @@ As the course progresses and projects get more complex, we will start to move aw
 
 2. **DeepLearning CPU development environment**: [`gperdrizet/deeplearning-CPU`](https://github.com/gperdrizet/deeplearning-CPU) - this version has the same toolset and configuration, but is designed for folks without NVIDIA GPUs.
 
-3. **Large language models hosting/development environment**: [gperdrizet/llms-devcontainer] - template repository for working on LLM applications with compatability for GPU or CPU only inference. Also includes tools for local model inference server hosting.
+3. **Large language models hosting/development environment**: [`gperdrizet/llms-devcontainer`](https://github.com/gperdrizet/llms-devcontainer) - template repository for working on LLM applications with compatibility for GPU or CPU only. Also includes tools for local inference server hosting.
 
 
 ## Demos & activities
