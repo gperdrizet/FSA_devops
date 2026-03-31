@@ -35,3 +35,5 @@ As the course progresses and projects get more complex, we will start to move aw
 9. **Encoder decoder translation models**: [`gperdrizet/language-models`](https://github.com/gperdrizet/language-models). Neural machine translation models using encoder-decoder architecture and LSTM+attention, builds up to implementation of the first transformer model.
 
 10. **LLM applications demonstrations**: [`gperdrizet/llms-demo`](https://github.com/gperdrizet/llms-demo). Demonstrations related to building LLM based applications topics covered include hosting models for inference, prompting strategies and LangChain for application development. Also includes slides and activities.
+
+11. **Unit 6 assignments template**: [gperdrizet/unit-6-assignments](https://github.com/gperdrizet/unit-6-assignments). GitHub repo for the incremental capstone and unit end assignment from unit 6. This is the environment set-up I used to complete my solutions, it contains a devcontainer set-up based on the `llms-gpu` container.
