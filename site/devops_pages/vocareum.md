@@ -41,6 +41,13 @@ You will need to enter this token once per Vocareum session to authenticate to G
 
 ### 1.3. First commit and push
 
+First, initalize git with you email and password:
+
+```text
+git config --global user.name "Your name"
+git config --global user.email "email@adsress.com"
+```
+
 Now we need to commit and push the contents of your Vocareum environment to the empty repository we created in step 1.1. From the Jupyter lab interface of your Vocareum workbench:
 
 1. Open a terminal (File -> New -> Terminal)
